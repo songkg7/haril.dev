@@ -103,6 +103,4 @@ orthodromicDistance = 328199.9794919944
 
 ---
 
-## 参考
-
 [^footnote]: [SRIDと座標系の概要](https://www.alibabacloud.com/blog/an-overview-of-srid-and-coordinate-system_597004)

@@ -103,6 +103,4 @@ The margin of error may not be satisfactory depending on business requirements, 
 
 ---
 
-## Reference
-
 [^footnote]: [An Overview of SRID and Coordinate System](https://www.alibabacloud.com/blog/an-overview-of-srid-and-coordinate-system_597004)

@@ -100,8 +100,8 @@ distance 의 결과는 미터(m) 로 출력되므로 km 로 변환해보면 328k
 
 오차의 범위는 비즈니스 요구사항에 따라서 만족스럽지 못할 수 있기 때문에 실제 적용하시기 전에 geotools 의 다른 method 들도 충분히 테스트해보시기 바랍니다.
 
----
+:::
 
-## Reference
+---
 
 [^footnote]: [An Overview of SRID and Coordinate System](https://www.alibabacloud.com/blog/an-overview-of-srid-and-coordinate-system_597004)
