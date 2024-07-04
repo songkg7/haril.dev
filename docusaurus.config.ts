@@ -86,6 +86,7 @@ const config: Config = {
                         'https://github.com/songkg7/haril.dev/blob/main/',
                 },
                 blog: {
+                    routeBasePath: '/',
                     showReadingTime: true,
                     blogTitle: 'Haril Dev',
                     blogDescription: 'A blog about software development, programming, and computer science.',
