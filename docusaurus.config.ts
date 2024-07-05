@@ -142,9 +142,9 @@ const config: Config = {
                 },
                 {
                     type: 'docSidebar',
-                    sidebarId: 'productSidebar',
+                    sidebarId: 'docSidebar',
                     position: 'left',
-                    label: 'Products',
+                    label: 'Docs',
                 },
                 {
                     to: '/blog/archive',
