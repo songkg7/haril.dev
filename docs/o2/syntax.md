@@ -2,19 +2,13 @@
 sidebar_position: 4
 ---
 
-# Syntax
+# 지원 문법
 
-:::caution
-
-**WIP**
-
-:::
-
-O2 supports the following syntax conversion.
+O2 는 Obsidian 마크다운 문법을 Jekyll 마크다운 문법으로 변환합니다. 지원되는 포맷들은 다음과 같습니다.
 
 ## Wiki link
 
-Obsidian's wiki link is converted to a simple link.
+Obsidian 의 Wiki link 문법은 기본 마크다운 링크로 변환됩니다.
 
 **AS-IS**
 
@@ -30,7 +24,7 @@ Obsidian's wiki link is converted to a simple link.
 
 ## Image
 
-Obsidian's image syntax is converted to Jekyll's image syntax.
+Obsidian 의 이미지 문법은 기본 마크다운 문법으로 변환됩니다.
 
 **AS-IS**
 
@@ -44,11 +38,11 @@ Obsidian's image syntax is converted to Jekyll's image syntax.
 ![image](/assets/img/<yyyy-MM-dd>-<title>/NewJeans.png)
 ```
 
-`yyyy-MM-dd` is replaced by the date of converting.
+`yyyy-MM-dd` 는 문서 내 `date` 또는 `updated` frontMatter 에 기반하여 변환됩니다. 링크가 깨지지 않도록 첨부파일들도 적절하게 이동됩니다.
 
 ## Resize image
 
-Obsidian's resize image syntax is converted to Jekyll's resize image syntax.
+Obsidian 의 이미지 크기 조절 문법은 Jekyll 의 이미지 크기 조절 문법으로 변환됩니다.
 
 **AS-IS**
 
@@ -64,7 +58,7 @@ Obsidian's resize image syntax is converted to Jekyll's resize image syntax.
 
 ## Resize image (width & height)
 
-Obsidian's resize image syntax is converted to Jekyll's resize image syntax.
+이미지의 폭과 높이 또한 변환할 수 있습니다.
 
 **AS-IS**
 
@@ -80,7 +74,7 @@ Obsidian's resize image syntax is converted to Jekyll's resize image syntax.
 
 ## Embeds
 
-Obsidian's embeds syntax is converted to a simple link.
+Obsidian 의 embeds 문법은 기본 링크로 변환됩니다.
 
 **AS-IS**
 
@@ -96,7 +90,7 @@ Obsidian's embeds syntax is converted to a simple link.
 
 ## Comments
 
-Obsidian's comments syntax is converted to Jekyll's comments syntax.
+Obsidian 의 주석 문법은 Jekyll 의 주석 문법으로 변환됩니다.
 
 **AS-IS**
 
@@ -112,7 +106,7 @@ Obsidian's comments syntax is converted to Jekyll's comments syntax.
 
 ## Footnotes
 
-Obsidian's footnotes syntax is converted to Jekyll's footnotes syntax.
+Obsidian 의 각주 문법은 Jekyll 의 각주 문법으로 변환됩니다.
 
 **AS-IS**
 
@@ -126,11 +120,11 @@ Obsidian's footnotes syntax is converted to Jekyll's footnotes syntax.
 [^fn-nth-1]
 ```
 
-Currently, only supports the simple syntax.
+현재는 simple 방식만 지원합니다.
 
 ## Curly braces
 
-Obsidian's curly braces syntax is converted to Jekyll's curly braces syntax.
+Obsidian 의 중괄호 문법은 Jekyll 의 중괄호 문법으로 변환됩니다.
 
 **AS-IS**
 
@@ -144,12 +138,11 @@ Obsidian's curly braces syntax is converted to Jekyll's curly braces syntax.
 {% raw %}{{ content }}{% endraw %}
 ```
 
-Optional
+이 기능은 설정에서 토글을 통해 활성화할 수 있습니다.
 
-## Others
+## 그 외
 
-Grammars not in the table are ignored. If there is a syntax you would like to convert, please let me know in an
-issue.
+나머지 문법들은 무시됩니다. 변환하고 싶은 문법이 있다면 이슈로 알려주세요.
 
 ## References
 
