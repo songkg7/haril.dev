@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 설정
 
+![](https://i.imgur.com/PGb8LU1.png)
+
 O2 supports multiple platforms. Each platform has its own settings. You can configure the settings in the plugin settings tab.
 
 ## Jekyll

@@ -2,10 +2,10 @@
 sidebar_position: 2
 ---
 
-# O2 플러그인 설치
+# 설치
 
-:::caution
+`Option -> Community Plugins -> Browse -> O2` 로 검색하여 설치합니다.
 
-WIP
+![](https://i.imgur.com/pCWFtCr.png)
 
-:::
+![](https://i.imgur.com/uyzm0P4.png)
