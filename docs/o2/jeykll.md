@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 지원 문법
+# 지원 문법 for Jekyll
 
 O2 는 Obsidian 마크다운 문법을 Jekyll 마크다운 문법으로 변환합니다. 지원되는 포맷들은 다음과 같습니다.
 
