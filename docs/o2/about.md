@@ -29,9 +29,10 @@ Your vault
 
 ## 사용법
 
-변환 준비가 완료된 노트가 있다면, `ready` 폴더로 이동시켜주세요.
+1. 변환 준비가 완료된 노트가 있다면, `ready` 폴더로 이동시켜주세요.
+2. 그 후, Obsidian 의 `cmd + p` 단축키를 이용하여 `O2: convert to Other Platform` 명령을 실행해주세요.
 
-그 후, Obsidian 의 `cmd + p` 단축키를 이용하여 `O2: convert to Other Platform` 명령을 실행해주세요.
+---
 
-문서는 사본을 통해 변환되며, 원본에 영향을 주지 않습니다.
-`Auto archive` 토글을 활성화시킬 경우, 변환된 문서는 `archive` 폴더로 이동됩니다.
+- 문서는 사본을 통해 변환되며, 원본에 영향을 주지 않습니다.
+- `Auto archive` 토글을 활성화시킬 경우, 변환된 문서는 `archive` 폴더로 이동됩니다.
