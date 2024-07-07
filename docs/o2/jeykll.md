@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Obsidian To Jekyll
 
-O2 는 Obsidian 마크다운 문법을 Jekyll 마크다운 문법으로 변환합니다. 지원되는 포맷들은 다음과 같습니다.
+O2 는 Jekyll 마크다운 문법 변환 기능을 제공합니다. 지원되는 포맷들은 다음과 같습니다.
 
 ## Wiki link
 
