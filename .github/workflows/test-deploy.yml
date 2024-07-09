@@ -21,8 +21,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Test build website
         env:
           GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
-        run: yarn build
+        run: |
+          echo $GOOGLE_ANALYTICS_TRACKING_ID
+          yarn build
