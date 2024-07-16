@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn set version stable
-          yarn config get enableImmutableInstalls
+          yarn config set -H enableImmutableInstalls false
           yarn install --immutable
       - name: Test build website
         env:
