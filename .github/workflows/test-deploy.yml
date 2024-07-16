@@ -23,7 +23,8 @@ jobs:
       - name: Install dependencies
         run: |
           yarn set version stable
-          yarn install --immutable
+          yarn config set -H enableImmutableInstalls false
+          yarn install
       - name: Test build website
         env:
           GOOGLE_ANALYTICS_TRACKING_ID: dummy
