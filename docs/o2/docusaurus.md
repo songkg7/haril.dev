@@ -46,6 +46,20 @@ Obsidian 의 Embeds 는 텍스트로 변환됩니다.
 Obsidian
 ```
 
-## Comments
-
 ## Footnotes
+
+Obsidian 의 각주 문법은 Docusaurus 의 각주 문법으로 변환됩니다.
+
+**AS-IS**
+
+```md
+[^1]
+```
+
+**TO-BE**
+
+```md
+[^fn-nth-1]
+```
+
+현재는 obsidian simple footnote 방식만 지원합니다.
