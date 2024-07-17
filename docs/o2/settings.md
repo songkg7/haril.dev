@@ -25,7 +25,7 @@ your jekyll project (ex: /Users/user1/Documents/GitHub/user1.github.io)
 
 ## Docusaurus
 
-:::warning
+:::warning[WIP]
 
 아직 첨부파일 이동은 지원하지 않습니다.
 
