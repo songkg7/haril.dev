@@ -25,6 +25,12 @@ your jekyll project (ex: /Users/user1/Documents/GitHub/user1.github.io)
 
 ## Docusaurus
 
+:::warning
+
+아직 첨부파일 이동은 지원하지 않습니다.
+
+:::
+
 ```text
 your docusaurus project (ex: /Users/user1/Documents/GitHub/user1.github.io)
 └── blog
@@ -40,9 +46,3 @@ your docusaurus project (ex: /Users/user1/Documents/GitHub/user1.github.io)
   - ex: /Users/user1/Documents/GitHub/user1.github.io
 - 변환된 문서는 `<docusaurus path>/blog/yyyy-MM-dd` 폴더에 생성됩니다. 생성되는 날짜 포맷은 설정에서 변경가능합니다.
 - 첨부파일은 링크되는 문서와 효과적으로 그룹화하기 위해 문서와 같은 폴더에 저장됩니다.
-
-:::warning
-
-아직 첨부파일 이동은 지원하지 않습니다.
-
-:::
