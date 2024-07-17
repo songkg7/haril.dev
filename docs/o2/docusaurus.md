@@ -50,6 +50,12 @@ Obsidian
 
 Obsidian 의 각주 문법은 Docusaurus 의 각주 문법으로 변환됩니다.
 
+:::warning
+
+현재는 obsidian simple footnote 방식만 지원합니다.
+
+:::
+
 **AS-IS**
 
 ```md
@@ -61,5 +67,3 @@ Obsidian 의 각주 문법은 Docusaurus 의 각주 문법으로 변환됩니다
 ```md
 [^fn-nth-1]
 ```
-
-현재는 obsidian simple footnote 방식만 지원합니다.
