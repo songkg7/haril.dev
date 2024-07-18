@@ -16,7 +16,7 @@ your jekyll project (ex: /Users/user1/Documents/GitHub/user1.github.io)
         └── yyyy-MM-dd-title (where the attachments are placed. yyyy-MM-dd is replaced by the date of converting)
 ```
 
-- `Jekyll path` 는 Jekyll 프로젝트의 절대경로를 입력합니다
+- `Jekyll path` 는 Jekyll 프로젝트의 절대 경로를 입력합니다
   - ex: /Users/user1/Documents/GitHub/user1.github.io
 - 첨부파일들은 `<jekyll path>/assets/img/<yyyy-MM-dd>` 폴더에 날짜별로 복사됩니다.
 - 만약 첨부파일 복사대상경로를 변경하고 싶다면 `Relative resource path` 값을 변경하면 됩니다.
@@ -25,9 +25,9 @@ your jekyll project (ex: /Users/user1/Documents/GitHub/user1.github.io)
 
 ## Docusaurus
 
-:::warning[WIP]
+:::warning
 
-아직 첨부파일 이동은 지원하지 않습니다.
+현재 Docusaurus 를 위한 첨부파일 이동 기능은 지원되지 않습니다. 이 기능은 향후 업데이트에서 추가될 예정입니다.
 
 :::
 
