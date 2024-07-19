@@ -2,59 +2,59 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# はじめに
 
-O2 is a tool that converts Obsidian Markdown files into the syntax of other platforms.
+O2は、ObsidianのMarkdownファイルを他のプラットフォームの構文に変換するツールです。
 
-:::warning[Breaking Changes]
+:::warning[重大な変更]
 
-Previously, converted files were automatically moved to an archive. If you wanted to revise the document, you had to open the blog platform project in a code editor or move the archived document back, which was inconvenient. This often led to discrepancies between the original Obsidian document and the published version as more revisions were made.
+以前は、変換されたファイルは自動的にアーカイブに移動されていました。ドキュメントを修正したい場合は、ブログプラットフォームのプロジェクトをコードエディタで開くか、アーカイブされたドキュメントを戻す必要があり、不便でした。このため、オリジナルのObsidianドキュメントと公開されたバージョンの間に不一致が生じることがよくありました。
 
-Given that blog posts often undergo frequent revisions shortly after being published, it was necessary to implement a loose synchronization state that allows for some level of revision within Obsidian and frequent updates to the blog platform.
+ブログ投稿は公開後すぐに頻繁に修正されることが多いため、Obsidian内での修正とブログプラットフォームへの頻繁な更新を可能にする緩やかな同期状態を実装する必要がありました。
 
-Therefore, starting from version 2.0, **converted files are no longer moved to an archive**. The conversion process now creates a copy in place, allowing you to continue revisions within Obsidian. If you no longer wish to make changes in Obsidian, you can manually exclude the document from the ready directory.
+そのため、バージョン2.0からは、**変換されたファイルはアーカイブに移動されなくなりました**。変換プロセスはその場でコピーを作成し、Obsidian内での修正を続けることができます。Obsidianでの修正をもう行いたくない場合は、手動でドキュメントをreadyディレクトリから除外することができます。
 
-You can enable the `Auto archive` toggle to use an automatic backup feature similar to the previous version.
+以前のバージョンと同様の自動バックアップ機能を使用するには、`自動アーカイブ`トグルを有効にすることができます。
 
 :::
 
-## Prerequisites
+## 前提条件
 
-### Vault Structure
+### Vaultの構造
 
-Your Obsidian Vault should have the following structure:
+Obsidian Vaultは以下の構造を持つ必要があります：
 
 ```text
 Your vault
-├── ready (Path for documents you want to convert)
-├── archive (Optional. Backup path for converted documents)
-└── attachments (Path for attachments)
+├── ready (変換したいドキュメントのパス)
+├── archive (オプション。変換されたドキュメントのバックアップパス)
+└── attachments (添付ファイルのパス)
 ```
 
-Other directories will be ignored.
+他のディレクトリは無視されます。
 
 :::tip
 
-You can change the default path names in the settings.
+設定でデフォルトのパス名を変更することができます。
 
 :::
 
-## Usage
+## 使用方法
 
-1. Move the note you want to convert to the `ready` folder.
-2. Use the `cmd + p` shortcut in Obsidian to run the `O2: convert to Other Platform` command.
-3. The document will be converted to the syntax of the platforms defined in the settings.
-    - The document is converted through a copy, so the original remains unaffected.
-    - If the `Auto archive` toggle is enabled, the converted document will be moved to the `archive` folder.
+1. 変換したいノートを`ready`フォルダに移動します。
+2. Obsidianで`cmd + p`ショートカットを使用して、`O2: convert to Other Platform`コマンドを実行します。
+3. ドキュメントは設定で定義されたプラットフォームの構文に変換されます。
+    - ドキュメントはコピーを通じて変換されるため、オリジナルは影響を受けません。
+    - `自動アーカイブ`トグルが有効になっている場合、変換されたドキュメントは`archive`フォルダに移動されます。
 
-:::info[Why Use the Ready Concept]
+:::info[Readyコンセプトを使用する理由]
 
-- O2 follows the PARA paradigm, where documents are not fixed to a specific category and can be moved to different categories as needed.
-- If we relied solely on front matter for categorization, we would need to scan the front matter of all documents to find those to convert, which could cause performance issues for users with a large number of documents. By using a **dedicated directory for conversion**, O2 efficiently narrows the search scope.
+- O2はPARAパラダイムに従っており、ドキュメントは特定のカテゴリに固定されず、必要に応じて異なるカテゴリに移動できます。
+- フロントマターだけに依存してカテゴリ分けを行う場合、変換するドキュメントを見つけるためにすべてのドキュメントのフロントマターをスキャンする必要があり、多数のドキュメントを持つユーザーにとってパフォーマンスの問題が発生する可能性があります。**変換専用のディレクトリ**を使用することで、O2は検索範囲を効率的に絞り込むことができます。
 
 :::
 
-## Articles
+## 記事
 
-- [Developing the O2 Plugin](https://haril.dev/blog/2023/02/22/develop-obsidian-plugin)
-- [Contributing to Open Source Obsidian Plugins](https://l2hyunn.github.io/posts/Obsidian-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/)
+- [O2プラグインの開発](https://haril.dev/blog/2023/02/22/develop-obsidian-plugin)
+- [オープンソースのObsidianプラグインに貢献する](https://l2hyunn.github.io/posts/Obsidian-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/)
