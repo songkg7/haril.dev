@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Configuration
 
 O2 offers custom configuration options to transfer converted documents to the appropriate platform.
