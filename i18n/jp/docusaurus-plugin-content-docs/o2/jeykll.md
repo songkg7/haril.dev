@@ -4,147 +4,147 @@ sidebar_position: 3
 
 # Jekyll
 
-O2 provides functionality to convert Jekyll markdown syntax. The supported formats are as follows:
+O2は、JekyllのMarkdown構文に変換する機能を提供します。サポートされている形式は以下の通りです。
 
-## Wiki link
+## Wikiリンク
 
-Obsidian's Wiki link syntax is converted to standard markdown links.
+ObsidianのWikiリンク構文は、標準のMarkdownリンクに変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 [[What is Obsidian?]]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 [What is Obsidian?](/What%20is%20Obsidian%3F)
 ```
 
-## Image
+## 画像
 
-Obsidian's image syntax is converted to standard markdown syntax.
+Obsidianの画像構文は、標準のMarkdown構文に変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 ![[NewJeans.png]]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 ![image](/assets/img/<yyyy-MM-dd>-<title>/NewJeans.png)
 ```
 
-`yyyy-MM-dd` is converted based on the `date` or `updated` frontMatter in the document. Attachments are also moved appropriately to ensure links do not break.
+`yyyy-MM-dd`は、ドキュメントの`date`または`updated`フロントマターに基づいて変換されます。添付ファイルも適切に移動され、リンクが切れないようにします。
 
-## Resize image
+## 画像のリサイズ
 
-Obsidian's image resizing syntax is converted to Jekyll's image resizing syntax.
+Obsidianの画像リサイズ構文は、Jekyllの画像リサイズ構文に変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 ![[NewJeans.png|100]]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 ![image](/assets/img/<yyyy-MM-dd>-<title>/NewJeans.png){: width="100" }
 ```
 
-## Resize image (width & height)
+## 画像のリサイズ（幅と高さ）
 
-You can also convert the width and height of images.
+画像の幅と高さも変換できます。
 
-### AS-IS
+### 変換前
 
 ```md
 ![[NewJeans.png|100x200]]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 ![image](/assets/img/<yyyy-MM-dd>-<title>/NewJeans.png){: width="100" height="200" }
 ```
 
-## Embeds
+## 埋め込み
 
-Obsidian's embed syntax is converted to standard links.
+Obsidianの埋め込み構文は、標準のリンクに変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 ![[Obsidian#This is Obsidian!]]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 [Obsidian](/Obsidian#This%20is%20Obsidian!)
 ```
 
-## Comments
+## コメント
 
-Obsidian's comment syntax is converted to Jekyll's comment syntax.
+Obsidianのコメント構文は、Jekyllのコメント構文に変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 %% This is a comment %%
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 <!-- This is a comment -->
 ```
 
-## Footnotes
+## 脚注
 
-Obsidian's footnote syntax is converted to Jekyll's footnote syntax.
+Obsidianの脚注構文は、Jekyllの脚注構文に変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 [^1]
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 [^fn-nth-1]
 ```
 
-Currently, only the simple method is supported.
+現在、シンプルな方法のみサポートされています。
 
-## Curly braces
+## 中括弧
 
-Obsidian's curly brace syntax is converted to Jekyll's curly brace syntax.
+Obsidianの中括弧構文は、Jekyllの中括弧構文に変換されます。
 
-### AS-IS
+### 変換前
 
 ```md
 {{ content }}
 ```
 
-### TO-BE
+### 変換後
 
 ```md
 {% raw %}{{ content }}{% endraw %}
 ```
 
-This feature can be toggled on or off in the settings.
+この機能は設定でオンまたはオフに切り替えることができます。
 
-## Others
+## その他
 
-Other syntaxes are ignored. If there are any syntaxes you would like to be converted, please let us know through an issue.
+その他の構文は無視されます。変換してほしい構文があれば、issueを通じてお知らせください。
 
-## References
+## 参考文献
 
 - [Obsidian](https://obsidian.md/)
 - [Jekyll](https://jekyllrb.com/)
