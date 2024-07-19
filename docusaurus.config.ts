@@ -82,8 +82,7 @@ const config: Config = {
                     sidebarPath: './sidebars.ts',
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        'https://github.com/songkg7/haril.dev/blob/main/',
+                    editUrl: 'https://github.com/songkg7/haril.dev/blob/main/',
                 },
                 blog: {
                     showReadingTime: true,
@@ -142,9 +141,14 @@ const config: Config = {
                 },
                 {
                     type: 'docSidebar',
-                    sidebarId: 'productSidebar',
+                    sidebarId: 'docSidebar',
                     position: 'left',
-                    label: 'Products',
+                    label: 'Docs',
+                },
+                {
+                    type: 'docsVersionDropdown',
+                    position: 'right',
+                    dropdownActiveClassDisabled: true,
                 },
                 {
                     to: '/blog/archive',

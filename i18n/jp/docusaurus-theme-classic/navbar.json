@@ -11,9 +11,9 @@
     "message": "ブログ",
     "description": "Navbar item with label Blog"
   },
-  "item.label.Products": {
-    "message": "プロダクト",
-    "description": "Navbar item with label Products"
+  "item.label.Docs": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label Docs"
   },
   "item.label.Archive": {
     "message": "アーカイブ",
