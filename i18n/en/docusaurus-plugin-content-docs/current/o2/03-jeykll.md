@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Jekyll
 
 O2 provides functionality to convert Jekyll markdown syntax. The supported formats are as follows:

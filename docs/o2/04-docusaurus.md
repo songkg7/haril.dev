@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Docusaurus
 
 O2 는 Docusaurus 마크다운 문법 변환 기능을 제공합니다. 지원되는 포맷들은 다음과 같습니다.

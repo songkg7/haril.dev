@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction
 
 O2 is a tool that converts Obsidian Markdown files into the syntax of other platforms.
