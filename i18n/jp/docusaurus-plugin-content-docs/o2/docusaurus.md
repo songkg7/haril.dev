@@ -4,71 +4,71 @@ sidebar_position: 4
 
 # Docusaurus
 
-O2 provides a feature to convert Markdown syntax to Docusaurus format. The supported formats are as follows:
+O2はMarkdownの構文をDocusaurus形式に変換する機能を提供します。サポートされている形式は以下の通りです。
 
-## Wiki Link
+## ウィキリンク
 
-Obsidian's Wiki links are converted to plain text.
+Obsidianのウィキリンクはプレーンテキストに変換されます。
 
-### Before
+### 変換前
 
 ```md
 [[What is Obsidian?]]
 ```
 
-### After
+### 変換後
 
 ```md
 What is Obsidian?
 ```
 
-## Image
+## 画像
 
 :::warning
 
-Image conversion is not supported yet.
+画像の変換はまだサポートされていません。
 
 :::
 
 :::tip
 
-Using the [imgur plugin](https://github.com/gavvvr/obsidian-imgur-plugin) means you don't need to manage images as files.
+[imgurプラグイン](https://github.com/gavvvr/obsidian-imgur-plugin)を使用すると、画像をファイルとして管理する必要がなくなります。
 
 :::
 
-## Embeds
+## 埋め込み
 
-Obsidian's Embeds are converted to plain text.
+Obsidianの埋め込みはプレーンテキストに変換されます。
 
-### Before
+### 変換前
 
 ```md
 ![[Obsidian#This is Obsidian]]
 ```
 
-### After
+### 変換後
 
 ```md
 Obsidian
 ```
 
-## Footnotes
+## 脚注
 
-Obsidian's footnote syntax is converted to Docusaurus footnote syntax.
+Obsidianの脚注構文はDocusaurusの脚注構文に変換されます。
 
 :::warning
 
-Currently, only the Obsidian simple footnote method is supported.
+現在、Obsidianのシンプルな脚注方法のみがサポートされています。
 
 :::
 
-### Before
+### 変換前
 
 ```md
 [^1]
 ```
 
-### After
+### 変換後
 
 ```md
 [^fn-nth-1]
