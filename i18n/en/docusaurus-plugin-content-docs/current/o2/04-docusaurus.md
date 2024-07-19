@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Docusaurus
 
 O2 provides a feature to convert Markdown syntax to Docusaurus format. The supported formats are as follows:
