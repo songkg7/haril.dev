@@ -4,19 +4,19 @@ sidebar_position: 5
 
 # Docusaurus
 
-O2 provides functionality to convert Obsidian markdown syntax. The supported formats are as follows:
+O2 provides a feature to convert Markdown syntax to Docusaurus format. The supported formats are as follows:
 
 ## Wiki Link
 
 Obsidian's Wiki links are converted to plain text.
 
-**AS-IS**
+### Before
 
 ```md
 [[What is Obsidian?]]
 ```
 
-**TO-BE**
+### After
 
 ```md
 What is Obsidian?
@@ -30,17 +30,23 @@ Image conversion is not supported yet.
 
 :::
 
+:::tip
+
+Using the [imgur plugin](https://github.com/gavvvr/obsidian-imgur-plugin) means you don't need to manage images as files.
+
+:::
+
 ## Embeds
 
 Obsidian's Embeds are converted to plain text.
 
-**AS-IS**
+### Before
 
 ```md
 ![[Obsidian#This is Obsidian]]
 ```
 
-**TO-BE**
+### After
 
 ```md
 Obsidian
@@ -52,17 +58,17 @@ Obsidian's footnote syntax is converted to Docusaurus footnote syntax.
 
 :::warning
 
-Currently, only the Obsidian simple footnote format is supported.
+Currently, only the Obsidian simple footnote method is supported.
 
 :::
 
-**AS-IS**
+### Before
 
 ```md
 [^1]
 ```
 
-**TO-BE**
+### After
 
 ```md
 [^fn-nth-1]
