@@ -30,6 +30,12 @@ What is Obsidian?
 
 :::
 
+:::tip
+
+[imgur plugin](https://github.com/gavvvr/obsidian-imgur-plugin) 을 사용하면 이미지를 파일로 관리할 필요가 없어집니다.
+
+:::
+
 ## Embeds
 
 Obsidian 의 Embeds 는 텍스트로 변환됩니다.
