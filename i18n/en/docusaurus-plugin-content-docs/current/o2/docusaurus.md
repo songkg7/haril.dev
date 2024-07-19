@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # Docusaurus
 
-O2 는 Docusaurus 마크다운 문법 변환 기능을 제공합니다. 지원되는 포맷들은 다음과 같습니다.
+O2 provides functionality to convert Obsidian markdown syntax. The supported formats are as follows:
 
-## Wiki link
+## Wiki Link
 
-Obsidian 의 Wiki link 는 텍스트로 변환됩니다.
+Obsidian's Wiki links are converted to plain text.
 
 **AS-IS**
 
@@ -26,13 +26,13 @@ What is Obsidian?
 
 :::warning
 
-아직 이미지 변환은 지원하지 않습니다.
+Image conversion is not supported yet.
 
 :::
 
 ## Embeds
 
-Obsidian 의 Embeds 는 텍스트로 변환됩니다.
+Obsidian's Embeds are converted to plain text.
 
 **AS-IS**
 
@@ -48,11 +48,11 @@ Obsidian
 
 ## Footnotes
 
-Obsidian 의 각주 문법은 Docusaurus 의 각주 문법으로 변환됩니다.
+Obsidian's footnote syntax is converted to Docusaurus footnote syntax.
 
 :::warning
 
-현재는 obsidian simple footnote 방식만 지원합니다.
+Currently, only the Obsidian simple footnote format is supported.
 
 :::
 
