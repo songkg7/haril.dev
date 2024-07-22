@@ -1,10 +1,10 @@
-### Title: "Migrating a Jekyll Blog to Docusaurus"
-**Date:** 2024-07-22 17:54:45 +0900  
-**Tags:** [docusaurus, blog, algolia, react]  
-**Categories:** null  
-**Authors:** haril  
-**Description:** "A summary of the issues encountered and solutions found while migrating a Jekyll blog to Docusaurus."
-
+---
+title: "Migrating a Jekyll Blog to Docusaurus"
+date: 2024-07-22 17:54:45 +0900  
+tags: [docusaurus, blog, algolia, react]  
+categories: null  
+authors: haril  
+description: "A summary of the issues encountered and solutions found while migrating a Jekyll blog to Docusaurus."
 ---
 
 Recently, I undertook the task of moving my blog to a new platform. As I encountered various issues, I jotted down potential solutions, thinking they might be useful to others. Here’s a detailed account of the migration process.
