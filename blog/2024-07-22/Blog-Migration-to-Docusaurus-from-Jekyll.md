@@ -1,8 +1,10 @@
 ---
-title: "지킬 블로그를 도큐사우루스로 이사하기"
+title: "Jekyll 블로그를 Docusaurus 로 이사하기"
 date: 2024-07-22 17:54:45 +0900
 tags: [docusaurus, blog, algolia, react]
 categories: null
+authors: haril
+description: "Jekyll 블로그를 Docusaurus 로 마이그레이션하는 과정에서 마주한 문제들과 해결방법을 정리해봤습니다."
 ---
 
 최근 블로그 플랫폼을 옮기는 작업을 진행했습니다. 이 과정에서 문제를 마주할 때마다 우아한 해결방법은 없을 지 고민하며 몇 자 적어두었는데, 나름 수요가 있을지도 모른다는 생각에 글로 발행해보았습니다.
