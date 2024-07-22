@@ -1,5 +1,3 @@
-以下のテキストを自然な日本語に翻訳しました。
-
 ---
 title: "JekyllブログをDocusaurusに移行する"
 date: 2024-07-22 17:54:45 +0900  
@@ -373,6 +371,87 @@ yarn run write-translations --locale en
 
 ## UpdateAtとUpdateBy
 
-オプションを有効にするだけで、追加のフロントマターは必要ありません。
+オプションを有効にするだけでOKです。追加の前書きは不要です。
 
-更新はgit履歴に基づいて判断されるため、GitHub Actionでクローンする際のdepthオプションを確認してください。デフォルトでは最新のコミ
+更新はgitの履歴に基づいて決定されるため、GitHub Actionsでクローンする際のdepthオプションを確認してください。デフォルトでは最新のコミットのみを取得するようになっています。
+
+updateBy機能をロールバックした理由：
+
+- 自動化されたタスクがGitHub Actionsを修正者として表示するのが気に入らなかったため。
+- 編集ボタンを公開して共同作業を促進することを目指しているが、多くのPRを期待していないため。
+
+現在のところ、updateAtだけで十分です。
+
+## 移行のヒント: フォルダ構造の調整
+
+![ls-tree](https://i.imgur.com/ucjhZ0G.png)
+
+_既存のディレクトリ構造。Markdownドキュメントは`_posts`フォルダに直接配置されています。_
+
+Docusaurusはファイルをフォルダごとに整理することをサポートしており、画像などのリソースをグループ化するのに便利です。投稿の数を考えると、フォルダ構造を一度に調整するシェルスクリプトを書くのが良いでしょう。
+
+```bash
+#!/bin/bash
+
+# すべての.mdファイルに対して実行
+for file in *.md; do
+  # ファイル名から日付を抽出
+  date=$(echo $file | rg -o '\d{4}-\d{2}-\d{2}')
+
+  # 日付のディレクトリを作成（既に存在する場合は無視）
+  mkdir -p "$date"
+
+  # ファイルをディレクトリに移動
+  mv "$file" "$date/"
+done
+
+# 各ディレクトリに対して実行
+for dir in */; do
+    # ファイル名からyyyy-MM-dd部分を削除
+    new_filename=$(ls $dir | sed "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-//g")
+    mv "$dir/$(ls $dir)" "$dir/$new_filename"
+done
+```
+
+![after-script-execution](https://i.imgur.com/B8q31Qu.png)
+
+すべてのファイルが一度に整然と移動されました。次に、投稿で参照されているリソースを適切なディレクトリに移動します。
+
+`ripgrep`コマンドを使用してローカルリソースへの参照を見つけます。
+
+![ripgrep](https://i.imgur.com/YkUnVRQ.png)
+
+ファイルの相対パスを使用して、それらを適切に移動できます。
+
+1. 各リソースファイルを`blog/{yyyy-MM-dd}`に移動します。
+2. 投稿内の参照を`img`から`./resource.webp`に修正します。
+
+シェルスクリプトを使用すればこれも迅速かつ容易にできますが、リソース画像が少なかったため手動で行いました。
+
+これはあなたへの演習として残しておきます。😜（GPTに助けを求めると簡単にできるでしょう）
+
+## 画像の代替テキスト
+
+- 以前は画像の代替テキストを無視していましたが、スクリーンリーダーを使用する人々のためにテキスト代替が必要であることを学びました。
+- このことを知って、代替テキストの重要性を認識しました。
+- GitHubはこれに関するワークフローを追加しており、確認する価値があります。
+    - [GitHub - github/accessibility-alt-text-bot: An action to remind users to add alt text on Issues, Pull Requests, and Discussions](https://github.com/github/accessibility-alt-text-bot)
+
+## 結論
+
+簡単なKPT（Keep, Problem, Try）振り返りを行います。
+
+- 古いブログを即座にシャットダウンして新しいブログを作成した際に、リダイレクトを設定しなかったことを後悔しています。
+    - 既存の訪問者を考慮して、少なくともリダイレクトを設定すべきでした。
+    - URLを変更しないようにしようとしましたが、計画通りにはいきませんでした。
+- リダイレクトを設定しなかったことは重大なミスでした。トラフィックログは一貫して404エラーを示しています。
+- 前のプラットフォームでエレガントに維持するのが難しかった点にもっと注意を払うべきです。
+    - 例：デザイン、フロントエンド技術の適用など
+
+## 参考文献
+
+- [About custom domains and GitHub Pages - GitHub Docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- [Add Giscus Comments to Docusaurus 3 Blog Posts and Doc Pages | Riku Block](https://rikublock.dev/docs/tutorials/giscus-integration/)
+- [Docusaurus](https://docusaurus.io/docs/search#algolia-troubleshooting)
+- [No results with Docusaurus contextual search - Open Q&A - Algolia Community](https://discourse.algolia.com/t/no-results-with-docusaurus-contextual-search/19409/7)
+
