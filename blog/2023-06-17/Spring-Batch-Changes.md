@@ -9,6 +9,8 @@ authors: haril
 
 Spring Batch 5.0 이 되면서 변경된 사항들을 정리합니다.
 
+<!-- truncate -->
+
 ## What's new?
 
 ### `@EnableBatchProcessing` 은 더 이상 권장되지 않음

@@ -14,6 +14,8 @@ authors: haril
 
 결론부터 말하자면 **`getter/setter` 는 캡슐화를 전혀 달성할 수 없다.** 캡슐화를 하고 싶다면 getter, setter 는 쓰지 말아야한다는 것이다. 이걸 이해하기 위해서는 먼저 캡슐화에 대해 정확히 이해할 필요가 있다.
 
+<!-- truncate -->
+
 ## 캡슐화(encapsulation)란 무엇인가
 
 > 캡슐화(영어: encapsulation)는 객체 지향 프로그래밍에서 다음 2가지 측면이 있다: 객체의 속성(data fields)과 행위(메서드, methods)를 하나로 묶고, 실제 구현 내용 일부를 내부에 감추어 은닉한다. - 위키백과

@@ -11,6 +11,8 @@ authors: haril
 
 [O2](https://github.com/songkg7/o2) 프로젝트를 좀 더 유연하게 관리할 수 있도록 디자인 패턴을 사용하여 구조를 개선하는 과정을 이야기합니다.
 
+<!-- truncate -->
+
 ## Problem
 
 ~~더 글로리를 보던~~ 열심히 개발을 하던 어느 날, 모처럼 [Issue](https://github.com/songkg7/o2/issues/50) 가 하나 올라옵니다.

@@ -19,6 +19,8 @@ authors: haril
 
 물론 가능합니다. AWS ECS, AWS EKS 등 여러가지 자동화 솔루션들도 있지만, Jenkins 로 배치 및 EC2 서버를 직접 관리한다고 가정하고 환경을 구성해봅니다.
 
+<!-- truncate -->
+
 ## Architecture
 
 ```mermaid

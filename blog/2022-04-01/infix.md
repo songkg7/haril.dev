@@ -20,6 +20,8 @@ println(pair)
 
 필요에 따라 `to` 와 같은 infix functions 을 새로 정의할 수 있는데 예를 들면 `Int` 를 다음과 같이 확장할 수 있습니다.
 
+<!-- truncate -->
+
 ```kotlin
 infix fun Int.times(str: String) = str.repeat(this)
 println(2 times "Hello ")

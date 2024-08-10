@@ -14,6 +14,8 @@ authors: haril
 
 예제로 문제가 된 부분을 살펴보겠습니다.
 
+<!-- truncate -->
+
 ```sql
 create table student
 (

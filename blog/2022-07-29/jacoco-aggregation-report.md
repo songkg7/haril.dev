@@ -10,6 +10,8 @@ authors: haril
 
 gradle 7.4 부터 여러 jacoco test report 를 집계하여 통합적으로 볼 수 있는 기능이 추가되었다. 과거에는 여러 모듈에 걸친 테스트의 결과를 하나의 파일로 확인하기가 무척 어려웠지만, 이제는 매우 편리하게 리포트를 하나로 합칠 수 있게 되었다.
 
+<!-- truncate -->
+
 ## Usage
 
 ### report 를 수집하는 역할만 가진 sub module 생성

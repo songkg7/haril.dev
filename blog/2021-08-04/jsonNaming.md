@@ -32,6 +32,8 @@ private String poster;
 
 바로 이럴 때 클래스레벨에 작성하여 클래스의 naming 전략을 한 번에 바꿀 수 있는 어노테이션이 바로 `@JsonNaming` 입니다.
 
+<!-- truncate -->
+
 ## @JsonNaming
 
 ### before v2.12

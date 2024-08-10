@@ -26,6 +26,8 @@ jetbrains/qodana-jvm --show-report
 
 저는 분석 결과를 저장하기 위해서 root 경로에 qodana 라는 폴더를 생성한 뒤 사용하였습니다.
 
+<!-- truncate -->
+
 ```bash
 mkdir ~/qodana
 # 이후 <output-directory> 를 ~/qobana 로 교체해줍니다.

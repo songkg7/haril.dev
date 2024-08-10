@@ -27,6 +27,8 @@ minikube 를 사용하는 방법을 알고 싶다면, 공식 사이트를 참고
 
 minikube 는 일단 간단하게 짚어보고 넘어가자.
 
+<!-- truncate -->
+
 ## minikube
 
 ### Install

@@ -19,6 +19,8 @@ public interface Collection<E> extends Iterable<E>
 
 간단한 예제를 작성해보자.
 
+<!-- truncate -->
+
 ## Example
 
 ```java
