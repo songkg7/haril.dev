@@ -10,6 +10,8 @@ authors: haril
 
 최근 Vim 을 사용하게 되면서, 주변 모든 환경을 Vim 으로 맞추게 되었다. 그 중 safari 의 Vim 확장 프로그램인 Vimari 와 Chrome 의 확장인 Vimium 에서 몇가지 단축키가 다른 부분이 있어서 통일시키기 위해 특정 키를 새로 매핑했는데 vimium 에서 단축키를 매핑하는 법을 소개하고자 한다.
 
+<!-- truncate -->
+
 ## Viminum 옵션창
 
 ![where](./1.webp)

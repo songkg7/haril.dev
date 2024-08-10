@@ -11,6 +11,8 @@ authors: haril
 
 Docker 를 사용하여 Jenkins 를 설치하고 운영하는 법을 설명한다.
 
+<!-- truncate -->
+
 ## Contents
 
 ### Install

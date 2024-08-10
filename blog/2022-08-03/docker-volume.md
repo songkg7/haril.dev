@@ -14,6 +14,8 @@ authors: haril
 
 바로 이럴 때 `volume` 을 사용할 수 있다.
 
+<!-- truncate -->
+
 ## PostgreSQL local 에 설치해보기
 
 간단하게 postgres 를 설치하고 사용해보는 예제를 통해 volume 에 대해서 살펴보자.

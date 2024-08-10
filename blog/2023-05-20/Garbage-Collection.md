@@ -11,6 +11,8 @@ authors: haril
 
 JVM 의 Garbage collection(이하 GC) 에 대해서 정리해봅니다.
 
+<!-- truncate -->
+
 ## What is GC?
 
 JVM Memory 는 여러 영역으로 구분되어 있다.

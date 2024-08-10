@@ -12,6 +12,8 @@ authors: haril
 `git diff` 를 편리하게 사용할 수 있도록 만들어주는 툴.
 터미널에서 `git diff` 명령어를 사용하는 경우가 잦을 경우 아주 유용하게 사용할 수 있다.
 
+<!-- truncate -->
+
 ## Usage
 
 ```bash

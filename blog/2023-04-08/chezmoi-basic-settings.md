@@ -15,6 +15,8 @@ authors: haril
 
 :::
 
+<!-- truncate -->
+
 ## 어떻게 사용해야 할까
 
 chezmoi 의 명령어 사용법은 `chezmoi help` 및 공식문서에서 확인할 수 있으니, 이 글에서는 chezmoi 를 좀 더 편리하게 사용하기 위한 응용을 설명해봅니다.

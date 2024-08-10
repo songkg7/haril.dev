@@ -12,6 +12,8 @@ description: "Google Cloud Kubernetes 를 local 에서 CLI 를 통해 빠르게 
 
 Google 에서 제공하는 Cloud shell 을 통해 언제 어디서나 Web 을 통해서 `kubectl` 을 실행할 수 있다는 점은 매우 편리하지만 간단한 조회 명령 한 줄을 위해서 Web 접근 및 인증 등 다소 귀찮은 작업이 필요하다는 단점이 있습니다. 이번 글에서는 Google Cloud Kubernetes 를 local 에서 CLI 를 통해 빠르게 관리하기 위한 방법을 공유합니다.
 
+<!-- truncate -->
+
 ## Contents
 
 ### GCP CLI 설치

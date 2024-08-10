@@ -63,6 +63,8 @@ java VerboseLanguage
 
 3개의 챕터 내용을 조합하면 그제서야 "Hello World" 에 대해 그림이 그려진다. 꽤 긴 여정이니, 호흡을 가다듬고 출발해보자.
 
+<!-- truncate -->
+
 ## Chapter 1. Why?
 
 Java 에서 Hello World 를 출력하기 전까지 살펴봐야할 몇가지 why moment 가 있다.

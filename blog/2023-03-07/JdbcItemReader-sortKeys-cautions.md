@@ -9,6 +9,8 @@ authors: haril
 
 PostgreSQL에서  대용량 데이터를 조회하며 겪었던 문제에 대해 공유합니다.
 
+<!-- truncate -->
+
 ## Problem
 
 Spring Batch `JdbcPagingItemReader` 를 사용 중 `sortKeys` 를 다음과 같이 설정했다.

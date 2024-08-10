@@ -13,6 +13,8 @@ authors: haril
 
 확인해보니 `/var/run/docker.sock` 가 정상적으로 설정되있지 않다는 내용이 출력되었는데 이를 해결하기 위한 방법을 공유한다.
 
+<!-- truncate -->
+
 ## Description
 
 해당 문제는 Docker desktop `4.13.0` 에서 나타나는 현상이다.
