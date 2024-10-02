@@ -37,7 +37,7 @@ chezmoi edit-config
 
 [merge]
     command = "nvim"
-    args = ["-d", "{% raw %}{{ .Destination }}{% endraw %}", "{% raw %}{{ .Source }}{% endraw %}", "{% raw %}{{ .Target }}{% endraw %}"]
+    args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
 ```
 
 VScodeを使っている場合は、次のように設定できます：
@@ -73,8 +73,8 @@ chezmoi edit ~/.config/git/config
 
 ```text
 [user]
-    name = {% raw %}{{ .name }}{% endraw %}
-    email = {% raw %}{{ .email }}{% endraw %}
+    name = {{ .name }}
+    email = {{ .email }}
 ```
 
 これらの中括弧はローカル環境で定義された変数で埋められます。デフォルトの変数リストは`chezmoi data`で確認できます。
@@ -136,7 +136,7 @@ vi run_once_before_install-packages-darwin.sh.tmpl
 
 ```bash
 # MacOSでのみ実行
-{% raw %}{{- if eq .chezmoi.os "darwin" -}}{% endraw %}
+{{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
 PACKAGES=(
@@ -196,7 +196,7 @@ brew cleanup
 printf '\n\ncaskアプリをインストールしています...\n'
 brew install --cask ${CASKS[@]}
 
-{% raw %}{{ end -}}{% endraw %}
+{{ end -}}
 ```
 
 shに詳しくなくても、それほど難しくないはずです。`brew install`でインストールするパッケージのリストを`PACKAGES`に、`brew install --cask`でインストールするアプリケーションのリストを`CASKS`に定義します。インストールプロセスはスクリプトによって実行されます。

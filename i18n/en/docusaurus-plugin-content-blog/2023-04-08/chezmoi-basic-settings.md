@@ -37,7 +37,7 @@ chezmoi edit-config
 
 [merge]
     command = "nvim"
-    args = ["-d", "{% raw %}{{ .Destination }}{% endraw %}", "{% raw %}{{ .Source }}{% endraw %}", "{% raw %}{{ .Target }}{% endraw %}"]
+    args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
 ```
 
 If you use VScode, you can set it up like this:
@@ -73,8 +73,8 @@ chezmoi edit ~/.config/git/config
 
 ```text
 [user]
-    name = {% raw %}{{ .name }}{% endraw %}
-    email = {% raw %}{{ .email }}{% endraw %}
+    name = {{ .name }}
+    email = {{ .email }}
 ```
 
 These curly braces will be filled with variables defined in the local environment. You can check the default variable list with `chezmoi data`.
@@ -136,7 +136,7 @@ By scripting brew bundle using these keywords, you can have uniform brew package
 
 ```bash
 # Only run on MacOS
-{% raw %}{{- if eq .chezmoi.os "darwin" -}}{% endraw %}
+{{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
 PACKAGES=(
@@ -196,7 +196,7 @@ brew cleanup
 printf '\n\nInstalling cask apps...\n'
 brew install --cask ${CASKS[@]}
 
-{% raw %}{{ end -}}{% endraw %}
+{{ end -}}
 ```
 
 Even if you are not familiar with sh, it shouldn't be too difficult to understand. Define the `PACKAGES` list for packages installed with `brew install` and `CASKS` for applications installed with `brew install --cask`. The installation process will be carried out by the script.
