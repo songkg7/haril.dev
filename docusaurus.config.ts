@@ -67,6 +67,14 @@ const config: Config = {
             src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6035015699405439",
             async: true,
             crossorigin: "anonymous"
+        },
+        {
+            type: "text/javascript",
+            "data-cmp-ab": "1",
+            src: "https://cdn.consentmanager.net/delivery/autoblocking/f18bbf0c711ac.js",
+            "data-cmp-host": "a.delivery.consentmanager.net",
+            "data-cmp-cdn": "cdn.consentmanager.net",
+            "data-cmp-codesrc": "16"
         }
     ],
 
