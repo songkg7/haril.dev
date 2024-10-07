@@ -83,7 +83,7 @@ const config: Config = {
             'classic',
             {
                 googleTagManager: {
-                    containerId: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+                    containerId: process.env.GOOGLE_TAG
                 },
                 gtag: {
                     trackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
