@@ -74,6 +74,9 @@ const config: Config = {
         [
             'classic',
             {
+                googleTagManager: {
+                    containerId: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+                },
                 gtag: {
                     trackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
                     anonymizeIP: true,
