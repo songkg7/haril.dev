@@ -28,6 +28,7 @@ jobs:
         env:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
           GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
+          GOOGLE_TAG: ${{ secrets.GOOGLE_TAG }}
         run: yarn build
 
       - name: Upload Build Artifact
@@ -54,3 +55,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
