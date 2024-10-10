@@ -68,14 +68,6 @@ const config: Config = {
             async: true,
             crossorigin: "anonymous"
         },
-        {
-            type: "text/javascript",
-            "data-cmp-ab": "1",
-            src: "https://cdn.consentmanager.net/delivery/autoblocking/f18bbf0c711ac.js",
-            "data-cmp-host": "a.delivery.consentmanager.net",
-            "data-cmp-cdn": "cdn.consentmanager.net",
-            "data-cmp-codesrc": "16"
-        }
     ],
 
     presets: [
@@ -83,7 +75,7 @@ const config: Config = {
             'classic',
             {
                 googleTagManager: {
-                    containerId: process.env.GOOGLE_TAG
+                    containerId: process.env.GOOGLE_TAG_MANAGER
                 },
                 gtag: {
                     trackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
