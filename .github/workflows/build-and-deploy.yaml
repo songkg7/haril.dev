@@ -28,7 +28,7 @@ jobs:
         env:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
           GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
-          GOOGLE_TAG: ${{ secrets.GOOGLE_TAG }}
+          GOOGLE_TAG_MANAGER: ${{ secrets.GOOGLE_TAG_MANAGER }}
         run: yarn build
 
       - name: Upload Build Artifact
