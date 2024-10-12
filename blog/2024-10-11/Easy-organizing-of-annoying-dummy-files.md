@@ -7,13 +7,11 @@ categories: null
 description: "더미파일을 정리하는데 귀찮으신가요? 이번 글에서는 shell 스크립트를 활용하여 더미파일을 쉽게 정리하는 방법을 소개해드립니다."
 ---
 
-[![AI Assisted Yes](https://img.shields.io/badge/AI%20Assisted-Yes-green?style=for-the-badge)](https://github.com/mefengl/made-by-ai)
-
 ## Overview
 
 여러 기기에서 클라우드 스토리지를 사용하시나요? 그렇다면 아마도 충돌 파일이 조금씩 늘어나는 경험을 해보셨을 것 같아요.
 
-![](https://i.imgur.com/wExLU6I.gif)
+![충돌파일이 늘어나있는 모습을 보여주는 애니메이션](https://i.imgur.com/wExLU6I.gif)
 
 _틈만 나면 늘어나는 conflicted 파일_
 
@@ -37,7 +35,7 @@ file_list=$(find . -type f -name "*conflict*" 2>/dev/null)
 
 # 검색된 파일이 없으면 종료
 if [ -z "$file_list" ]; then
-    echo "No files containing 'conflict' found. Exiting."
+    echo "No files containing 'conflict' found. Exiting." >&2
     exit 0
 fi
 
@@ -115,7 +113,7 @@ fi
 
 ## 조금 더 우아하게
 
-![](https://i.imgur.com/VkruAdx.png)
+![salt](https://i.imgur.com/VkruAdx.png)
 
 약간의 ~~소금~~도구만 사용해도 UX 를 극적으로 개선할 수 있어요. Linux 기본 명령만 사용했던 이전 스크립트와 달리 몇가지 의존성이 추가되지만, 충분한 가치는 있을거에요.
 
@@ -131,6 +129,8 @@ fi
 
 ```bash
 #!/bin/bash
+
+IFS=$'\n'
 
 # gum, fd, trash-cli 가 설치되어 있는지 확인
 if ! command -v gum &> /dev/null || ! command -v fd &> /dev/null || ! command -v trash &> /dev/null; then
@@ -204,3 +204,4 @@ fd -IH | fzf -m | xargs -I{} trash "{}"
 [^fn-nth-1]: [GitHub - sharkdp/fd: A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
 [^fn-nth-2]: [GitHub - charmbracelet/gum: A tool for glamorous shell scripts 🎀](https://github.com/charmbracelet/gum)
 [^fn-nth-3]: [GitHub - andreafrancia/trash-cli: Command line interface to the freedesktop.org trashcan.](https://github.com/andreafrancia/trash-cli)
+
