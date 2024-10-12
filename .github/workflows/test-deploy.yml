@@ -28,5 +28,6 @@ jobs:
       - name: Test build website
         env:
           GOOGLE_ANALYTICS_TRACKING_ID: dummy
+          GOOGLE_TAG_MANAGER: ${{ secrets.GOOGLE_TAG_MANAGER }}
         run: yarn build
 
