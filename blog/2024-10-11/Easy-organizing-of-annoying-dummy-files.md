@@ -139,7 +139,7 @@ if ! command -v gum &> /dev/null || ! command -v fd &> /dev/null || ! command -v
     exit 1
 fi
 
-# fd를 사용하여 'conflicted'를 포함하는 파일 검색
+# fd를 사용하여 conflicted 를 포함하는 파일 검색
 file_list=$(fd -H -I -t f 'conflicted')
 
 # 검색된 파일이 없으면 종료
