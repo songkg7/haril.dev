@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 소개
 
-O2 는 Obsidian Markdown 파일을 다른 플랫폼의 문법으로 변환해주는 도구입니다.
+[O2](https://github.com/songkg7/o2) 는 Obsidian Markdown 파일을 다른 플랫폼의 문법으로 변환해주는 도구입니다.
 
 :::warning[Breaking Changes]
 
