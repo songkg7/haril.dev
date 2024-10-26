@@ -1,17 +1,9 @@
-Certainly! Here's a naturalistic English translation of the provided text:
-
 ---
-
-## Title: "[Shell] Easily Organize Annoying Dummy Files"
-
-### Date: October 12, 2024
-
-### Tags: [shell, gum, fd, trash-cli]
-
-### Author: Haril
-
-### Description: "Are you tired of organizing dummy files? In this post, we'll show you how to easily tidy up those files using a shell script."
-
+title: "[Shell] Easily Organize Annoying Dummy Files"
+date: October 12, 2024
+tags: [shell, gum, fd, trash-cli]
+authors: haril
+description: "Are you tired of organizing dummy files? In this post, we'll show you how to easily tidy up those files using a shell script."
 ---
 
 ## Overview
