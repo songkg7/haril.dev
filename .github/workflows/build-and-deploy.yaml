@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn set version 4.4.0
-          yarn install
+          yarn install --no-immutable
       - name: Build website
         env:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
