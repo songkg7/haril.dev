@@ -164,12 +164,18 @@ echo
 # gum confirmを使用してユーザーに確認を要求
 if gum confirm "Are you sure you want to delete these files?"; then
     # 選択されたファイルを削除
-    trash $selected_files
+    echo "$selected_files" | tr '\n' '\0' | xargs -0 trash
     gum style --foreground 212 "File deletion process completed."
 else
     gum style --foreground 213 "Operation cancelled. No files were deleted."
 fi
 ```
+
+:::warning
+
+一部のコマンドはOSによっては動作しない場合があります。
+
+:::
 
 - `gum`と`fd`がインストールされているか確認します。
 - `fd -H -I -t f 'conflict'`コマンドを使用して、ファイル名に'conflict'を含むすべてのファイルを検索します。
