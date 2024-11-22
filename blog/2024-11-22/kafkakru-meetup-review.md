@@ -1,7 +1,7 @@
 ---
 title: "KafkaKRU Meetup Review"
 date: 2024-11-22 12:30:55 +0900
-tags: null
+tags: [kafka, event-sourcing, cqrs, kafkakru]
 description: KafkaKRU 밋업 참관기
 authors: haril
 draft: true
