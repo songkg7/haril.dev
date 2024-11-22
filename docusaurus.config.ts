@@ -44,8 +44,12 @@ const config: Config = {
         },
     },
 
-    plugins: ['docusaurus-plugin-sass'],
-
+    plugins: [
+        'docusaurus-plugin-sass',
+    ],
+    future: {
+        experimental_faster: true
+    },
     markdown: {
         mermaid: true,
     },

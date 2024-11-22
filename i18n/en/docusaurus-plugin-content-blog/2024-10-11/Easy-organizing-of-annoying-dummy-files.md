@@ -162,12 +162,18 @@ echo
 # Use gum confirm to request confirmation from the user
 if gum confirm "Are you sure you want to delete these files?"; then
     # Delete selected files
-    trash $selected_files
+    echo "$selected_files" | tr '\n' '\0' | xargs -0 trash
     gum style --foreground 212 "File deletion process completed."
 else
     gum style --foreground 213 "Operation cancelled. No files were deleted."
 fi
 ```
+
+:::warning
+
+Some commands may not work, depending on the OS.
+
+:::
 
 - Checks if `gum`, `fd`, and `trash-cli` are installed.
 - Uses `fd -H -I -t f 'conflict'` to search for all files containing 'conflict' in their names.
