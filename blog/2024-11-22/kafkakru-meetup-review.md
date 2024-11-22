@@ -8,9 +8,11 @@ authors: haril
 
 ![](https://i.imgur.com/g1LTUKd.png)
 
-# KafkaKRU 밋업 참관기: Event Sourcing부터 리더 파티션 밸런싱까지
+## KafkaKRU 밋업 참관기: Event Sourcing부터 리더 파티션 밸런싱까지
 
 2024년 11월 21일, 서울 중구 삼화타워에서 열린 KafkaKRU 밋업에 참석했습니다. 사실 대기자 명단에 있었어서 참석이 어려운 상태였던 것 같지만, 열정으로 봐주셔서 다행히 쫓겨나지는 않았습니다. 결과적으로는 예상을 훨씬 뛰어넘는 값진 시간이었어요.
+
+<!-- truncate -->
 
 ## 카프카를 활용한 Event Sourcing, CQRS 아키텍처와 적용 사례
 
