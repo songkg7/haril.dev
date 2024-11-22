@@ -4,10 +4,10 @@ date: 2024-11-22 12:30:55 +0900
 tags: [kafka, event-sourcing, cqrs, kafkakru]
 description: KafkaKRU 밋업 리뷰
 authors: haril
-image: https://i.imgur.com/g1LTUKd.png
+image: https://i.imgur.com/Cg9Usdb.png
 ---
 
-![](https://i.imgur.com/g1LTUKd.png)
+![](https://i.imgur.com/Cg9Usdb.png)
 
 ## KafkaKRU 밋업 리뷰: Event Sourcing부터 리더 파티션 밸런싱까지
 
