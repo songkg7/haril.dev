@@ -47,7 +47,7 @@ _리뷰하기 쉬운 코드란 무엇인가?_
 
 제가 시니어라면(저는 아직 시니어가 아니지만 😂), 팀원들에게 이 책의 몇몇 부분을 특히 강조할 것 같아요. "읽기 쉬운 코드가 진짜 좋은 코드다"라는 메시지와 함께, 책이 제시하는 가이드라인을 통해 팀의 코드가 조금 더 나아질 수 있다는 믿음을 심어줄 것 같아요. 개인의 역량을 뛰어넘어 팀 전체가 깨끗하고 효율적인 코드를 작성하도록 돕는 일, 그것이 시니어의 역할이니까요 (끄덕).
 
-![image](https://blog.kakaocdn.net/dn/cWahxu/btq7Y7E2rO1/Zd15hijI94hqLLQdzvakrk/img.gif)
+![동의를 표현하는 고개 끄덕임 GIF](https://blog.kakaocdn.net/dn/cWahxu/btq7Y7E2rO1/Zd15hijI94hqLLQdzvakrk/img.gif)
 
 ## Conclusion
 
