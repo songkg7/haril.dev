@@ -6,12 +6,10 @@ description: 코드 작성 가이드 책을 읽고 느낀 점을 작성해보았
 authors: haril
 ---
 
-![코드 작성 가이드 | 이시가와 무네토시 - 교보문고](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140709090.jpg)
+![이시가와 무네토시 저자의 코드 작성 가이드 책 표지](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140709090.jpg)
 
 :::info
-
-출판사로부터 도서를 제공받았습니다.
-
+본 리뷰는 출판사로부터 도서를 제공받아 작성되었으며, 이는 리뷰의 내용이나 평가에 영향을 미치지 않았음을 알려드립니다.
 :::
 
 ## Overview
