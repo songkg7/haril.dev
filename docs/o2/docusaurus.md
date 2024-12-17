@@ -73,3 +73,19 @@ Obsidian 의 각주 문법은 Docusaurus 의 각주 문법으로 변환됩니다
 ```md
 [^fn-nth-1]
 ```
+
+## Frontmatter
+
+### updated
+
+원본 글에 `updated` frontmatter 가 존재한다면, 변환 결과의 `date` frontmatter value 를 `updated` 의 value 로 대체합니다.
+
+### authors
+
+Docusaurus 에서는 `authors` 를 사용하여 작성자를 표시합니다.
+설정에 입력된 값이 있다면 변환 결과에 authors frontmatter 가 추가됩니다.
+
+```
+authors: haril
+```
+
