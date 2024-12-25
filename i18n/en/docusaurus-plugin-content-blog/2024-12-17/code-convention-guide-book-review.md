@@ -1,13 +1,9 @@
-**Title: "[Book Review] Code Writing Guide"**
-
-**Date: December 17, 2024**
-
-**Tags: [review, book, convention, clean-code, code-quality, programming]**
-
-**Description: Discover ways to improve code readability and the review process through Munetoshi Ishikawa's 'Code Writing Guide.'**
-
-**Authors: Haril**
-
+---
+title: "[Book Review] Code Writing Guide"
+date: December 17, 2024
+tags: [review, book, convention, clean-code, code-quality, programming]
+description: "Discover ways to improve code readability and the review process through Munetoshi Ishikawa's 'Code Writing Guide.'"
+authors: haril
 ---
 
 ![Cover of Munetoshi Ishikawa's Code Writing Guide](https://i.imgur.com/5ZT6cTX.png)
