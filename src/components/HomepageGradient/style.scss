@@ -1,9 +1,9 @@
 .gradient-background {
-    --gradient-color-1: #c084fc; 
-    --gradient-color-2: #818cf8; 
+    --gradient-color-1: #c084fc;
+    --gradient-color-2: #818cf8;
     --gradient-color-3: #34d399;
     --gradient-color-4: #60a5fa;
-    
+
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -11,142 +11,136 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  
+
     &__gradient {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-  
-      // Create three gradient orbs with different positions and sizes
-      &::before {
-        content: '';
         position: absolute;
         inset: 0;
-        background: 
-          radial-gradient(
-            circle at 77% 51%,
-            var(--gradient-color-1) 0%,
-            transparent 43%
-          ),
-          radial-gradient(
-            circle at 23% 72%,
-            var(--gradient-color-2) 0%,
-            transparent 58%
-          ),
-          radial-gradient(
-            circle at 52% 50%,
-            var(--gradient-color-3) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 15% 40%,
-            var(--gradient-color-4) 0%, 
-            transparent 40%
-          );
-        filter: blur(20px) brightness(1.1);
-        mix-blend-mode: screen;
-        transform-origin: center center;
-        animation: gradient-move 25s cubic-bezier(0.42, 0, 0.58, 1) infinite;
-      }
-  
-      // Add noise texture overlay
-      &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(
-          circle at center center,
-          transparent 0,
-          rgba(0, 0, 0, 0.15) 100%
-        );
-        mix-blend-mode: multiply;
-        opacity: 0.8;
-      }
+        pointer-events: none;
+
+        // Create three gradient orbs with different positions and sizes
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 77% 51%,
+                    var(--gradient-color-1) 0%,
+                    transparent 43%),
+                radial-gradient(circle at 23% 72%,
+                    var(--gradient-color-2) 0%,
+                    transparent 58%),
+                radial-gradient(circle at 52% 50%,
+                    var(--gradient-color-3) 0%,
+                    transparent 50%),
+                radial-gradient(circle at 15% 40%,
+                    var(--gradient-color-4) 0%,
+                    transparent 40%);
+            filter: blur(20px) brightness(1.1);
+            mix-blend-mode: screen;
+            transform-origin: center center;
+            animation: gradient-move 25s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+        }
+
+        // Add noise texture overlay
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center center,
+                    transparent 0,
+                    rgba(0, 0, 0, 0.15) 100%);
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
     }
-  
+
     &__content {
-      position: relative;
-      z-index: 10;
-      text-align: center;
-      padding: 2rem;
-      max-width: 42rem;
-      color: white;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-      h1 {
-        font-size: 2.25rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-  
-        @media (min-width: 768px) {
-          font-size: 3.75rem;
-        }
-      }
-  
-      p {
-        font-size: 1.125rem;
-        line-height: 1.75;
-        margin-bottom: 2rem;
-  
-        @media (min-width: 768px) {
-          font-size: 1.25rem;
-        }
-      }
-    }
-  
-    &__links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-  
-      a {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        padding: 2rem;
+        max-width: 42rem;
         color: white;
-        font-size: 1.125rem;
-        transition: color 0.2s;
-  
-        &:hover {
-          color: #e5e7eb;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+
+            @media (min-width: 768px) {
+                font-size: 3.75rem;
+            }
         }
-      }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+
+            @media (min-width: 768px) {
+                font-size: 1.25rem;
+            }
+        }
     }
-  }
-  
-  // Color theme variations
-  .theme-sunset {
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+        a {
+            color: white;
+            font-size: 1.125rem;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #e5e7eb;
+            }
+        }
+    }
+}
+
+// Color theme variations
+.theme-sunset {
     --gradient-color-1: #ff6b6b;
     --gradient-color-2: #ffd93d;
     --gradient-color-3: #6c5ce7;
     --gradient-color-4: #ff8c42;
-  }
-  
-  .theme-ocean {
+}
+
+.theme-ocean {
     --gradient-color-1: #00b8d4;
     --gradient-color-2: #0091ea;
     --gradient-color-3: #64ffda;
     --gradient-color-4: #0077c2;
-  }
-  
-  .theme-aurora {
+}
+
+.theme-aurora {
     --gradient-color-1: #a8e6cf;
     --gradient-color-2: #dcedc1;
     --gradient-color-3: #ffd3b6;
     --gradient-color-4: #ffaaa5;
-  }
-  
-  @keyframes gradient-move {
+}
+
+@keyframes gradient-move {
     0% {
-      transform: translate(0, 0) scale(1.2);
+        transform: translate(0, 0) scale(1.2);
     }
+
     25% {
-      transform: translate(-10%, 10%) scale(1.3);
+        transform: translate(-10%, 10%) scale(1.3);
     }
+
     50% {
-      transform: translate(10%, -10%) scale(1.1);
+        transform: translate(10%, -10%) scale(1.1);
     }
+
     75% {
-      transform: translate(-5%, -5%) scale(1.4);
+        transform: translate(-5%, -5%) scale(1.4);
     }
+
     100% {
-      transform: translate(0, 0) scale(1.2);
+        transform: translate(0, 0) scale(1.2);
     }
-  }
+}
