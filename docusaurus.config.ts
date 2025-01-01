@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
     title: 'Haril Dev',
     tagline: 'More information, better developer',
-    favicon: 'img/avatar.png',
+    favicon: 'img/favicon/favicon.ico',
 
     // Set the production url of your site here
     url: 'https://haril.dev',
@@ -133,10 +133,10 @@ const config: Config = {
             isCloseable: false,
         },
         navbar: {
-            title: 'Haril Dev',
+            // title: 'Haril Dev',
             logo: {
                 alt: 'Haril profile Logo',
-                src: 'img/avatar.png',
+                src: 'img/favicon/ms-icon-310x310.png',
             },
             items: [
                 {
