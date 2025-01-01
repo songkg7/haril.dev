@@ -124,14 +124,6 @@ const config: Config = {
             indexName: 'haril',
             insights: true,
         },
-        announcementBar: {
-            id: 'blog-migration-process',
-            content:
-                'I am currently migrating my blog. If you see a page not found, please search for the post using `cmd + k`.',
-            backgroundColor: '#fafbfc',
-            textColor: '#091E42',
-            isCloseable: false,
-        },
         navbar: {
             // title: 'Haril Dev',
             logo: {
