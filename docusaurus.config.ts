@@ -5,9 +5,9 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-    title: 'Haril Dev',
-    tagline: 'More information, better developer',
-    favicon: 'img/avatar.png',
+    title: 'HARIL',
+    tagline: 'Learning more, Growing better.',
+    favicon: 'img/favicon/favicon.ico',
 
     // Set the production url of your site here
     url: 'https://haril.dev',
@@ -124,19 +124,11 @@ const config: Config = {
             indexName: 'haril',
             insights: true,
         },
-        announcementBar: {
-            id: 'blog-migration-process',
-            content:
-                'I am currently migrating my blog. If you see a page not found, please search for the post using `cmd + k`.',
-            backgroundColor: '#fafbfc',
-            textColor: '#091E42',
-            isCloseable: false,
-        },
         navbar: {
-            title: 'Haril Dev',
+            // title: 'Haril Dev',
             logo: {
                 alt: 'Haril profile Logo',
-                src: 'img/avatar.png',
+                src: 'img/favicon/ms-icon-310x310.png',
             },
             items: [
                 {
@@ -171,7 +163,6 @@ const config: Config = {
             ],
         },
         footer: {
-            style: 'dark',
             copyright: `Copyright © ${new Date().getFullYear()} Haril Song, All Rights Reserved.`,
         },
         prism: {
