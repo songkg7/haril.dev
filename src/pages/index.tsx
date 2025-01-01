@@ -5,9 +5,10 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.scss';
+import HomepageGradient from '../components/HomepageGradient';
 
 function HomepageHeader() {
-    const {siteConfig} = useDocusaurusContext();
+    const { siteConfig } = useDocusaurusContext();
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
@@ -21,15 +22,12 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-    const {siteConfig} = useDocusaurusContext();
+    const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
             title={`Hello from ${siteConfig.title}`}
             description="More information, better developer">
-            <HomepageHeader/>
-            <main>
-                <HomepageFeatures/>
-            </main>
+            <HomepageGradient />
         </Layout>
     );
 }
