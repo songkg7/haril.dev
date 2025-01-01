@@ -5,8 +5,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-    title: 'Haril Dev',
-    tagline: 'More information, better developer',
+    title: 'HARIL',
+    tagline: 'Learning more, Growing better.',
     favicon: 'img/favicon/favicon.ico',
 
     // Set the production url of your site here
