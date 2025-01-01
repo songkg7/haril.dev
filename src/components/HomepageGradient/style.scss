@@ -21,12 +21,14 @@
         // Create three gradient orbs with different positions and sizes
         &::before {
             content: '';
+            will-change: transform;  
+            backface-visibility: hidden;  
             position: absolute;
             inset: 0;
             background:
                 radial-gradient(circle at 77% 51%,
                     var(--gradient-color-1) 0%,
-                    transparent 43%),
+                    transparent 40%),
                 radial-gradient(circle at 23% 72%,
                     var(--gradient-color-2) 0%,
                     transparent 58%),
@@ -62,7 +64,7 @@
         padding: 2rem;
         max-width: 42rem;
         color: white;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
         h1 {
             font-size: 2.25rem;
@@ -85,21 +87,6 @@
         }
     }
 
-    &__links {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-
-        a {
-            color: white;
-            font-size: 1.125rem;
-            transition: color 0.2s;
-
-            &:hover {
-                color: #e5e7eb;
-            }
-        }
-    }
 }
 
 // Color theme variations
