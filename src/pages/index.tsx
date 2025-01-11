@@ -24,8 +24,8 @@ export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="More information, better developer">
+            title={`${siteConfig.title}`}
+            description={`${siteConfig.tagline}`}>
             <HomepageGradient />
         </Layout>
     );
