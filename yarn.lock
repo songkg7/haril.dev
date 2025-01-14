@@ -2121,7 +2121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/core@npm:3.7.0, @docusaurus/core@npm:^3.6.3":
+"@docusaurus/core@npm:3.7.0, @docusaurus/core@npm:^3.7.0":
   version: 3.7.0
   resolution: "@docusaurus/core@npm:3.7.0"
   dependencies:
@@ -2462,7 +2462,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/preset-classic@npm:^3.6.3":
+"@docusaurus/preset-classic@npm:^3.7.0":
   version: 3.7.0
   resolution: "@docusaurus/preset-classic@npm:3.7.0"
   dependencies:
@@ -2524,7 +2524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-common@npm:3.7.0, @docusaurus/theme-common@npm:^3.6.3":
+"@docusaurus/theme-common@npm:3.7.0, @docusaurus/theme-common@npm:^3.7.0":
   version: 3.7.0
   resolution: "@docusaurus/theme-common@npm:3.7.0"
   dependencies:
@@ -2548,7 +2548,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-mermaid@npm:^3.6.3":
+"@docusaurus/theme-mermaid@npm:^3.7.0":
   version: 3.7.0
   resolution: "@docusaurus/theme-mermaid@npm:3.7.0"
   dependencies:
@@ -8125,13 +8125,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "haril.dev@workspace:."
   dependencies:
-    "@docusaurus/core": "npm:^3.6.3"
+    "@docusaurus/core": "npm:^3.7.0"
     "@docusaurus/eslint-plugin": "npm:^3.6.3"
     "@docusaurus/faster": "npm:^3.6.3"
     "@docusaurus/module-type-aliases": "npm:^3.6.3"
-    "@docusaurus/preset-classic": "npm:^3.6.3"
-    "@docusaurus/theme-common": "npm:^3.6.3"
-    "@docusaurus/theme-mermaid": "npm:^3.6.3"
+    "@docusaurus/preset-classic": "npm:^3.7.0"
+    "@docusaurus/theme-common": "npm:^3.7.0"
+    "@docusaurus/theme-mermaid": "npm:^3.7.0"
     "@docusaurus/tsconfig": "npm:^3.6.3"
     "@docusaurus/types": "npm:^3.6.3"
     "@giscus/react": "npm:^3.1.0"
