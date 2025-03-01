@@ -36,8 +36,8 @@
     "@docusaurus/module-type-aliases": "^3.6.3",
     "@docusaurus/tsconfig": "^3.6.3",
     "@docusaurus/types": "^3.6.3",
-    "@typescript-eslint/parser": "^8.22.0",
-    "typescript": "~5.7.2"
+    "@typescript-eslint/parser": "^8.25.0",
+    "typescript": "~5.8.2"
   },
   "browserslist": {
     "production": [
