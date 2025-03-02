@@ -1,5 +1,5 @@
 ---
-title: "Network Monitoring CLI tools"
+title: "네트워크 모니터링을 위한 도구들"
 date: 2025-03-02T20:32
 tags: [tool, network, k6, ngrinder, jmeter, locust]
 categories: null
