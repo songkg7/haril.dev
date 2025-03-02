@@ -5,6 +5,7 @@ tags: [tool, network, k6, ngrinder, jmeter, locust]
 categories: null
 authors: haril
 image: https://i.imgur.com/LuUWLuZ.png
+description: 네트워크 디버깅에 사용할 수 있는 다양한 도구들에 대해 살펴봅니다.
 ---
 
 ![banner](https://i.imgur.com/LuUWLuZ.png)
