@@ -52,7 +52,7 @@ AltTab 은 이런 문제를 완벽하게 해결해주어 훨씬 직관적으로 
 
 Rectangle 이나 Magnet 을 이미 불편함없이 쓰고 있다면, 굳이 필요하지 않을 수 있겠다. 다만 Loop 는 방향키를 분할에 사용하고 애니메이션을 통해 직관적인 UX 를 제공한다. 만약 창 분할 도구를 써본 적이 없다면 Loop 로 시작해보자.
 
-## Aerospace Beta
+## AeroSpace
 
 [GitHub - nikitabobko/AeroSpace: AeroSpace is an i3-like tiling window manager for macOS](https://github.com/nikitabobko/AeroSpace)
 
