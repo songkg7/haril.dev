@@ -1,48 +1,70 @@
 ---
+title: 설정
 sidebar_position: 2
 ---
 
 # 설정
 
-O2 는 변환된 문서를 플랫폼에 맞게 이동시키기 위한 커스텀 설정 기능을 제공합니다.
+O2는 다양한 설정 옵션을 통해 동작을 사용자 정의할 수 있습니다. 다음은 사용 가능한 모든 설정에 대한 상세 가이드입니다.
 
-## Jekyll
+## 경로 설정
 
-```text
-your jekyll project (ex: /Users/user1/Documents/GitHub/user1.github.io)
-├── _posts (where the converted notes are placed)
-└── assets
-    └── img
-        └── yyyy-MM-dd-title (where the attachments are placed. yyyy-MM-dd is replaced by the date of converting)
-```
+### Ready 폴더
+- **이름**: 다른 문법으로 변환할 노트를 저장할 폴더
+- **기본값**: `ready`
+- **설명**: 변환 준비가 된 노트들이 위치할 폴더입니다.
 
-- `Jekyll path` 는 Jekyll 프로젝트의 절대 경로를 입력합니다
-  - ex: /Users/user1/Documents/GitHub/user1.github.io
-- 첨부파일들은 `<jekyll path>/assets/img/<yyyy-MM-dd>` 폴더에 날짜별로 복사됩니다.
-- 만약 첨부파일 복사대상경로를 변경하고 싶다면 `Relative resource path` 값을 변경하면 됩니다.
-  - ex: `assets/img` -> `images`
-- `Auto create folders` 를 활성화하면, 필요한 폴더가 없을 경우 자동으로 생성합니다.
+### Archive 폴더
+- **이름**: 노트를 아카이브할 폴더
+- **기본값**: `archive`
+- **설명**: 변환이 완료된 노트들이 보관될 폴더입니다 (자동 아카이브가 활성화된 경우).
 
-## Docusaurus
+### Attachments 폴더
+- **이름**: 첨부파일을 저장할 폴더
+- **기본값**: `attachments`
+- **설명**: 모든 첨부파일(이미지, 파일 등)이 저장되는 폴더입니다.
 
-:::warning
+## 기능
 
-현재 Docusaurus 를 위한 첨부파일 이동 기능은 지원되지 않습니다. 이 기능은 향후 업데이트에서 추가될 예정입니다.
+### 폴더 자동 생성
+- **기본값**: 비활성화
+- **설명**: 활성화하면 필요한 폴더가 없을 경우 자동으로 생성합니다.
 
-:::
+### 자동 아카이브
+- **기본값**: 비활성화
+- **설명**: 활성화하면 변환 후 노트가 자동으로 아카이브 폴더로 이동됩니다.
 
-```text
-your docusaurus project (ex: /Users/user1/Documents/GitHub/user1.github.io)
-└── blog
-    ├── yyyy-MM-dd
-    │   └── title.md (where the converted notes are placed)
-    │   └── attachments.webp
-    └── static
-        └── img
-            └── yyyy-MM-dd-title (where the attachments are placed. yyyy-MM-dd is replaced by the date of converting)
-```
+### 중괄호 변환 (Jekyll)
+- **기본값**: 비활성화
+- **설명**: 활성화하면 이중 중괄호가 Jekyll raw 태그로 변환됩니다.
 
-- `Docusaurus path` 는 Docusaurus 프로젝트의 절대경로를 입력합니다
-  - ex: /Users/user1/Documents/GitHub/user1.github.io
-- 변환된 문서는 `<docusaurus path>/blog/yyyy-MM-dd` 폴더에 생성됩니다. 생성되는 날짜 포맷은 설정에서 변경가능합니다.
-- 첨부파일은 링크되는 문서와 효과적으로 그룹화하기 위해 문서와 같은 폴더에 저장됩니다.
+### Frontmatter 시간 업데이트
+- **기본값**: 비활성화
+- **설명**: 활성화하면 'updated' frontmatter가 있을 경우 'date' frontmatter가 'updated' 값으로 대체됩니다.
+
+## Jekyll 설정
+
+### Jekyll 경로
+- **설명**: Jekyll 작업 공간이 위치한 절대 경로입니다.
+- **예시**: `/Users/username/blog`
+
+### 상대 리소스 경로
+- **기본값**: `assets/img`
+- **설명**: Jekyll 프로젝트에서 리소스(이미지, 첨부파일)가 저장되는 상대 경로입니다.
+
+### Liquid 필터
+- **설명**: Jekyll의 Liquid 템플릿 필터에 대한 설정입니다.
+
+## Docusaurus 설정
+
+### Docusaurus 경로
+- **설명**: Docusaurus 작업 공간이 위치한 절대 경로입니다.
+- **예시**: `/Users/username/website`
+
+### 날짜 추출 패턴
+- **설명**: 노트 제목에서 날짜를 추출하는 데 사용되는 패턴입니다.
+- **옵션**: 다양한 날짜 형식에 대한 패턴이 제공됩니다.
+
+### 작성자
+- **설명**: Docusaurus frontmatter의 작성자 정보입니다.
+- **형식**: 여러 작성자의 경우 쉼표로 구분합니다 (예: `jmarcey, slorber`)
