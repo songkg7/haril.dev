@@ -1,48 +1,70 @@
 ---
+title: Configuration
 sidebar_position: 2
 ---
 
 # Configuration
 
-O2 offers custom configuration options to transfer converted documents to the appropriate platform.
+O2 provides various configuration options to customize its behavior. Here's a detailed guide to all available settings.
 
-## Jekyll
+## Path Settings
 
-```text
-your jekyll project (e.g., /Users/user1/Documents/GitHub/user1.github.io)
-├── _posts (where the converted notes are placed)
-└── assets
-    └── img
-        └── yyyy-MM-dd-title (where the attachments are placed. yyyy-MM-dd is replaced by the date of conversion)
-```
+### Ready Folder
+- **Name**: Folder to convert notes to another syntax in
+- **Default**: `ready`
+- **Description**: The folder where notes that are ready to be converted will be placed.
 
-- Enter the absolute path of your Jekyll project in `Jekyll path`.
-  - e.g., /Users/user1/Documents/GitHub/user1.github.io
-- Attachments are copied to the `<jekyll path>/assets/img/<yyyy-MM-dd>` folder, organized by date.
-- If you want to change the destination path for attachments, modify the `Relative resource path` value.
-  - e.g., `assets/img` -> `images`
-- Enable `Auto create folders` to automatically create necessary folders if they do not exist.
+### Archive Folder
+- **Name**: Folder to Archive notes in
+- **Default**: `archive`
+- **Description**: The folder where notes will be archived after conversion (when auto-archive is enabled).
 
-## Docusaurus
+### Attachments Folder
+- **Name**: Folder to store attachments in
+- **Default**: `attachments`
+- **Description**: The folder where all attachments (images, files, etc.) are stored.
 
-:::warning[WIP]
+## Features
 
-Attachment transfer is not yet supported.
+### Auto Create Folders
+- **Default**: Disabled
+- **Description**: When enabled, O2 will automatically create necessary folders if they don't exist.
 
-:::
+### Auto Archive
+- **Default**: Disabled
+- **Description**: When enabled, notes will be automatically moved to the archive folder after conversion.
 
-```text
-your docusaurus project (e.g., /Users/user1/Documents/GitHub/user1.github.io)
-└── blog
-    ├── yyyy-MM-dd
-    │   └── title.md (where the converted notes are placed)
-    │   └── attachments.webp
-    └── static
-        └── img
-            └── yyyy-MM-dd-title (where the attachments are placed. yyyy-MM-dd is replaced by the date of conversion)
-```
+### Curly Brace Conversion (Jekyll)
+- **Default**: Disabled
+- **Description**: When enabled, double curly braces will be converted to Jekyll raw tags.
 
-- Enter the absolute path of your Docusaurus project in `Docusaurus path`.
-  - e.g., /Users/user1/Documents/GitHub/user1.github.io
-- Converted documents are created in the `<docusaurus path>/blog/yyyy-MM-dd` folder. The date format can be changed in the settings.
-- Attachments are stored in the same folder as the linked document to effectively group them together.
+### Update Frontmatter Time
+- **Default**: Disabled
+- **Description**: When enabled, if an 'updated' frontmatter exists, the 'date' frontmatter will be replaced with the 'updated' value.
+
+## Jekyll Settings
+
+### Jekyll Path
+- **Description**: The absolute path where your Jekyll workspace is located.
+- **Example**: `/Users/username/blog`
+
+### Relative Resource Path
+- **Default**: `assets/img`
+- **Description**: The relative path where resources (images, attachments) are stored in your Jekyll project.
+
+### Liquid Filter
+- **Description**: Settings for Jekyll's Liquid template filters.
+
+## Docusaurus Settings
+
+### Docusaurus Path
+- **Description**: The absolute path where your Docusaurus workspace is located.
+- **Example**: `/Users/username/website`
+
+### Date Extraction Pattern
+- **Description**: The pattern used to extract dates from note titles.
+- **Options**: Various patterns for different date formats.
+
+### Authors
+- **Description**: Author(s) for Docusaurus front matter.
+- **Format**: For multiple authors, separate with commas (e.g., `jmarcey, slorber`)

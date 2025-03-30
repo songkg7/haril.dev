@@ -1,68 +1,76 @@
 ---
+title: O2 소개
 sidebar_position: 1
 ---
 
-# 소개
+# O2 - 한 번 작성하고, 여러 플랫폼으로 변환하기
 
-[O2](https://github.com/songkg7/o2) 는 Obsidian Markdown 파일을 다른 플랫폼의 문법으로 변환해주는 도구입니다.
+O2는 Obsidian 마크다운 파일을 Jekyll이나 Docusaurus와 같은 다른 플랫폼의 형식으로 변환해주는 Obsidian 플러그인입니다. "O2"라는 이름은 "Obsidian to Other platforms"를 의미합니다.
 
-:::warning[Breaking Changes]
+## 주요 기능
 
-기존에는 변환이 완료되면 자동으로 아카이브로 옮겼습니다.
-만약 퇴고 과정을 진행하고 싶다면 코드 에디터 등으로 블로그 플랫폼 프로젝트를 열거나,
-아카이브된 문서를 다시 옮겨와야하는 불편함이 있었습니다.
-이는 퇴고 작업이 진행될수록 옵시디언의 원본 글과 실제 발행된 글이 일치하지 않는 상태를 초래했습니다.
+- Obsidian 마크다운을 Jekyll (Chirpy 테마) 형식으로 변환
+- Obsidian 마크다운을 Docusaurus 형식으로 변환
+- 처리된 파일 자동 아카이빙
+- 사용자 정의 가능한 폴더 구조
+- frontmatter와 메타데이터 보존
+- 첨부파일과 이미지 처리
 
-블로그 글을 올리고 일정 시간은 퇴고 작업을 자주 하게 되는 만큼,
-옵시디언 내에서 퇴고를 어느 정도 하고 수시로 블로그 플랫폼으로 반영하게 하는,
-느슨한 동기화 상태를 구현할 필요가 있었습니다.
-
-따라서, 2.0 부터는 **변환 작업이 완료되어도 더 이상 글을 아카이브로 옮기지 않습니다**. 변환 작업은 제자리에서 사본을 통해 이루어지며,
-이는 퇴고 작업을 옵시디언 내에서 이어서 진행할 수 있다는 의미입니다. 만약 더 이상 옵시디언
-내에서 수정하지 않겠다면, ready 디렉토리에서 직접 제외하면 됩니다.
-
-`Auto archive` 토글을 활성화하면 이전 버전의 방식과 유사한 자동 백업 기능을 사용할 수 있습니다.
-
-:::
-
-## 전제조건
+## 사전 요구사항
 
 ### Vault 구조
 
-기본적으로 아래와 같은 Obsidian Vault 구조를 가져야 합니다.
+Obsidian vault는 다음과 같은 폴더 구조를 가져야 합니다 (폴더 이름은 설정에서 변경 가능):
 
 ```text
 Your vault
-├── ready (변환하고 싶은 문서 경로)
-├── archive (Optional. 변환이 완료된 문서의 백업 경로)
-└── attachments (첨부파일 경로)
+├── ready (변환할 노트를 위치시키는 폴더)
+├── archive (변환이 완료된 노트가 보관되는 폴더)
+└── attachments (첨부파일이 저장되는 폴더)
 ```
 
-다른 디렉토리들은 무시됩니다.
+변환 과정에서 다른 폴더들은 무시됩니다.
 
-:::tip
+## 사용 방법
 
-기본 경로 이름은 설정에서 변경할 수 있습니다.
+1. 변환하고 싶은 노트를 `ready` 폴더로 이동
+2. Obsidian의 명령 팔레트를 `cmd + p` (macOS) 또는 `ctrl + p` (Windows/Linux)로 열기
+3. `O2: Grammar Transformation` 명령을 검색하고 실행
+4. 설정에 따라 파일이 변환됩니다
 
-:::
+## 추천 플러그인
 
-## 사용법
+O2는 다음 Obsidian 플러그인들과 잘 작동합니다:
 
-1. 변환 준비가 완료된 노트가 있다면, `ready` 폴더로 이동시켜주세요.
-2. 그 후, Obsidian 의 `cmd + p` 단축키를 이용하여 `O2: convert to Other Platform` 명령을 실행해주세요.
-3. 설정에 정의된 플랫폼들로 문법이 변환된 문서가 이동합니다.
-    - 문서는 사본을 통해 변환되며, 원본에 영향을 주지 않습니다.
-    - `Auto archive` 토글을 활성화시킬 경우, 변환된 문서는 `archive` 폴더로 이동됩니다.
+- [imgur](https://github.com/gavvvr/obsidian-imgur-plugin): 이미지 처리에 추천
+- [Update frontmatter time on edit](https://github.com/beaussan/update-time-on-edit-obsidian): 정확한 타임스탬프 유지에 도움
 
-:::info[Ready 개념을 사용하는 이유]
+## 지원 플랫폼
 
-- O2 는 PARA 패러다임을 추구하고 있습니다. 이 방식에서 문서는 고정된 카테고리에 속하지 않으며, 필요에 따라 문서는 얼마든지 다른 카테고리로 이동할 수 있습니다.
-- 만약 front matter 로만 구분해야한다면, 문서를 변환하기 위해 전체 문서의 front matter 를 스캔해야 하며, 이는 문서량이 많은 유저의 경우 잠재적인 성능 문제를 야기할 수 있습니다. O2 는
-  **변환 전용 디렉토리를 사용함으로써 검색 범위를 효율적으로 좁히는 방법을 선택**했습니다.
+현재 O2는 다음 플랫폼으로의 변환을 지원합니다:
 
-:::
+- Jekyll (Chirpy 테마)
+- Docusaurus
 
-## Articles
+각 플랫폼은 필요에 따라 사용자 정의할 수 있는 고유한 설정과 구성을 가지고 있습니다.
 
-- [O2 plugin 개발하기](https://haril.dev/blog/2023/02/22/develop-obsidian-plugin)
-- [Obsidian 플러그인 오픈소스 기여하기](https://l2hyunn.github.io/posts/Obsidian-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/)
+## 기여하기
+
+O2에 기여하는 것을 환영합니다! 기여하고 싶으시다면:
+
+1. 큰 변경사항의 경우, 먼저 이슈나 토론을 열어주세요
+2. 저장소를 포크하고 기능 브랜치를 만드세요
+3. 변경사항을 만들고 테스트가 통과하는지 확인하세요
+4. 풀 리퀘스트를 제출하세요
+
+O2 빌드와 개발에 대한 자세한 정보는 [Obsidian 플러그인 개발 문서](https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin)를 참조하세요.
+
+## 후원
+
+O2가 도움이 되었고 개발을 지원하고 싶으시다면:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V8KX38Q)
+
+## 라이선스
+
+O2는 [MIT 라이선스](https://choosealicense.com/licenses/mit/) 하에 배포됩니다.
