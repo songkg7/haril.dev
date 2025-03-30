@@ -4,7 +4,10 @@ date: 2025-03-16T15:21
 tags: [inflearn, tool, productivity, lecture]
 description: MacOS 를 사용할 때 매우 유용하게 사용할 수 있는 도구들에 대해 소개합니다.
 authors: haril
+image: https://i.imgur.com/zgIVoVN.png
 ---
+
+![](https://i.imgur.com/zgIVoVN.png)
 
 ## Overview
 
