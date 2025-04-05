@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "Haril Dev",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
     "message": "Haril profile Logo",
     "description": "The alt text of navbar logo"
@@ -11,8 +7,12 @@
     "message": "Blog",
     "description": "Navbar item with label Blog"
   },
-  "item.label.Products": {
-    "message": "Products",
-    "description": "Navbar item with label Products"
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Archive": {
+    "message": "Archive",
+    "description": "Navbar item with label Archive"
   }
 }
