@@ -24,20 +24,20 @@
             will-change: transform;  
             backface-visibility: hidden;  
             position: absolute;
-            inset: 0;
+            inset: -10%;
             background:
                 radial-gradient(circle at 77% 51%,
                     var(--gradient-color-1) 0%,
-                    transparent 40%),
+                    transparent 45%),
                 radial-gradient(circle at 23% 72%,
                     var(--gradient-color-2) 0%,
-                    transparent 58%),
+                    transparent 63%),
                 radial-gradient(circle at 52% 50%,
                     var(--gradient-color-3) 0%,
-                    transparent 50%),
+                    transparent 55%),
                 radial-gradient(circle at 15% 40%,
                     var(--gradient-color-4) 0%,
-                    transparent 40%);
+                    transparent 45%);
             filter: blur(20px) brightness(1.1);
             mix-blend-mode: screen;
             transform-origin: center center;
@@ -113,22 +113,22 @@
 
 @keyframes gradient-move {
     0% {
-        transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1.2);
     }
 
     25% {
-        transform: translate(-5%, 5%) scale(1.1);
+        transform: translate(-3%, 3%) scale(1.2);
     }
 
     50% {
-        transform: translate(5%, -5%) scale(1);
+        transform: translate(3%, -3%) scale(1.2);
     }
 
     75% {
-        transform: translate(-2%, -2%) scale(1.1);
+        transform: translate(-2%, -2%) scale(1.2);
     }
 
     100% {
-        transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1.2);
     }
 }
