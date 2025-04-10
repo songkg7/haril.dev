@@ -99,6 +99,8 @@ A terminal that comes with all the basic necessary features. Especially the wrap
 
 Implemented with their own framework written in Rust rather than Electron, it operates quickly despite providing quite many features. Feature additions are also active, so there's no need to worry about "what if patches suddenly stop." If you're unsure which terminal to use, just try Warp without hesitation.
 
+> **Invite link**: https://app.warp.dev/referral/7GXN8K
+
 ## Ghostty
 
 [Ghostty](https://ghostty.org/)
