@@ -61,18 +61,6 @@ If you're already using Rectangle or Magnet without any issues, you might not ne
 
 **Automatically splits windows as they're opened**. With its Workspace feature, you can group and manage screens quickly and conveniently. It's particularly useful if you're a Vim user like me who rarely uses the mouse.
 
-## Gureum Input Method
-
-[Gureum Input Method - A new Korean input method for macOS](https://gureum.io/)
-
-It provides a quite interesting feature called 'moachigi', which correctly completes syllables even when the order of consonants and vowels is switched. This surprisingly reduces typo rates quite a bit. If you frequently make typos, it's worth trying.
-
-:::warning
-
-There's a bug where the last character disappears when typing in web editors like Confluence with Gureum activated, though it's not clear if this is an issue with the tool itself.
-
-:::
-
 ## Input Source Pro
 
 [Input Source Pro - Switch and track your input sources with ease](https://inputsource.pro/)
