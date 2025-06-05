@@ -28,16 +28,49 @@ authors: haril
 ## daily 노트 쓰는 법
 
 - obsidian template 활용
+- 할 일은 task 로 생성
 - dataview 를 사용하여 남은 todo 를 다음날로 넘김
 - 체크박스에 체크할 경우, 어느날짜에 체크했는지 표시되므로 기록을 유지할 수 있음
-    - obsidian 설정에서 해당 옵션 활성화 필요
+    - Obsidian 설정에서 해당 옵션 활성화 필요
 - 태그 등으로 최대한 구체적인 메타데이터를 남겨서 분석에 활용
 - 백업 및 동기화는 git, iCloud Drive 를 활용 중
     - iCloud Drive 를 사용하여 기기간 동기화하는 중이지만 git 에는 남기지 않기 위해 `daily/` 등의 민감한 파일이 들어있는 폴더는 `.gitignore` 에 명시하고 있음
 
+```
+## Memo
+
+- 앨저넌에게 꽃을
+- [ ] Kafka Schema registry research 공유 #code-review
+
+## Daily Scrum
+
+2025-06-05
+- 포스팅하기
+
+todo
+- pipeline 로직 수정
+- Kafka schema registry review
+
+## Review
+
+```
+
+위 샘플은 daily 노트의 간략한 형태다. 첫 번째 라인에서 Memo 섹션을 확인할 수 있다. 간단한 메모와 함께 todo 를 기록해두는데,
+이후 생성할 daily 노트의 review 섹션에 포함되게 되어서 수시로 살펴볼 수 있게끔 하고 있다.
+
+Daily Scrum 섹션은 이 daily 를 작성하는 날에 무엇을 했고, 그 다음날에는 무엇을 할지를 간략하게 기록한다.
+이 부분은 팀원들과 공유하는 용도로 쓰고 있다.
+
+마지막으로 Review 섹션은 앞서 언급했듯, 아직 완료되지 않은 task 를 다시 살펴볼 수 있게 하기 위한 섹션이다.
+이 부분에 대해서는 아래 Obsidian Template 문단을 참고.
+
+## Plugin
+
+매번 같은 형태의 타이틀을 작성하는 것은 매우 번거로우므로, 몇가지 플러그인을 활용해서 자동화한다.
+
 ### Obsidian Template
 
-결론부터 바로 간다. daily template 은 아래처럼 만들어놓고 사용하고 있다.
+실제로 사용중인 daily template 은 아래처럼 만들어놓고 사용하고 있다.
 
 ```text
 ---
