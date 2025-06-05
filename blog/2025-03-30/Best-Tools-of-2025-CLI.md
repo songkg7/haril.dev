@@ -13,6 +13,8 @@ image: https://i.imgur.com/zgIVoVN.png
 
 최고의 App 을 설명했던 [지난 글](https://haril.dev/blog/2025/03/16/Best-Tools-of-2025-Apps) 에 이어서 Command Line Interface(이하 CLI) 중 추천할만한 도구를 살펴본다. 이번에 소개되는 모든 툴들은 필자가 최소 6개월 이상 써본 도구들이며, 새로운 장비를 설정할 때 반드시 설치하는 것들이다.
 
+<!-- truncate -->
+
 ## zoxide
 
 [GitHub - ajeetdsouza/zoxide: A smarter cd command. Supports all major shells.](https://github.com/ajeetdsouza/zoxide)
