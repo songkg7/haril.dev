@@ -40,8 +40,6 @@ val rawBytes: ByteArray = record.value()
 val user = objectMapper.readValue(rawBytes, User::class.java)
 ```
 
-### 특징
-
 - **스키마 정보를 코드에서 직접 관리** (e.g. DTO 클래스)
 - Kafka 메시지의 구조가 **JSON 포맷**으로 되어 있어야 가능
 - **Schema Registry 불필요**
@@ -53,8 +51,6 @@ val user = objectMapper.readValue(rawBytes, User::class.java)
 val record = consumerRecord.value() as GenericRecord
 val name = record.get("name").toString()
 ```
-
-### 특징
 
 - DTO 없이도 동작 가능 (`GenericRecord`), 또는 generated class 사용 가능
 - 메시지 구조 변경 시 Registry의 호환성 정책으로 안전하게 진화 가능
