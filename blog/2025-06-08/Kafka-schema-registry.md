@@ -23,6 +23,8 @@ authors: haril
     - 코드 복잡도 상승
     - ByteArray - JSON - Object
 
+<!-- truncate -->
+
 ## ByteArray + DTO + ObjectMapper 방식
 
 Kafka 메시지가 JSON 형식이라고 가정:
