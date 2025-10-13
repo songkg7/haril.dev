@@ -10,7 +10,8 @@ authors: haril
 
 회사에서 시켜서, 혹은 개인의 니즈로 인해 daily 라고 부르는 일일 노트를 적곤 한다. 
 
-필자 또한 daily 를 적는데, 처음에는 회사의 요구로 인해 적기 시작했지만 적는 방식에 대해 많은 시행착오를 거쳐서 현재는 개인적인 용도로도 많이 적게 되었다.
+필자 또한 daily 를 적고 있다. 처음에는 회사의 요구로 인해 적기 시작했지만,
+적는 방식에 대해 많은 시행착오를 거쳐가면서 현재는 개인적인 용도로도 많이 적게 되었다.
 
 이런 daily 는 어떻게 작성해야 편하게 적으면서도 활용도를 최대한 높일 수 있는지 간단하게 적어보려고 한다.
 
@@ -97,7 +98,7 @@ todo
 ``dataview
 task
 from "daily"
-where !completed AND date(file.name) <= date(this.file.name) - dur(1 day)
+where !checked AND date(file.name) <= date(this.file.name) - dur(1 day)
 ``
 ```
 
