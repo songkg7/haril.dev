@@ -35,7 +35,8 @@ authors: haril
     - Obsidian 설정에서 해당 옵션 활성화 필요
 - 태그 등으로 최대한 구체적인 메타데이터를 남겨서 분석에 활용
 - 백업 및 동기화는 git, iCloud Drive 를 활용 중
-    - iCloud Drive 를 사용하여 기기간 동기화하는 중이지만 git 에는 남기지 않기 위해 `daily/` 등의 민감한 파일이 들어있는 폴더는 `.gitignore` 에 명시하고 있음
+    - iCloud Drive 를 사용하여 멀티 디바이스 동기화를 구성하고, git 으로 2차 백업을 유지한다.
+    다만 `daily/` 등의 민감한 파일이 들어있는 폴더는 `.gitignore` 에 명시하여 실수로 공유되는 것을 방지했다.
 
 ```
 ## Memo
