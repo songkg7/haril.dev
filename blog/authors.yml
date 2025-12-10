@@ -1,0 +1,12 @@
+haril:
+  name: Haril Song
+  title: Owner, Software Engineer at 42dot
+  image_url: https://github.com/songkg7.png
+  description: >
+    Haril is a software engineer who loves to build things. He is passionate about
+    open-source and loves to contribute to the community. He is the owner of this blog.
+  page: true
+  socials:
+    github: songkg7
+    linkedin: songkg7
+    coffeechat: https://bit.ly/coffee-with-haril

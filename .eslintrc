@@ -1,0 +1,4 @@
+{
+  "extends": ["plugin:@docusaurus/recommended"],
+  "parser": "@typescript-eslint/parser"
+}

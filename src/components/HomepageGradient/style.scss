@@ -1,0 +1,150 @@
+.gradient-background {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --gradient-color-1: #FF0080;
+    --gradient-color-2: #7928CA;
+    --gradient-color-3: #00DFD8;
+    --gradient-color-4: #FF4D4D;
+
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &__gradient {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+
+        // Create three gradient orbs with different positions and sizes
+        &::before {
+            content: '';
+            will-change: transform;  
+            backface-visibility: hidden;  
+            position: absolute;
+            inset: -10%;
+            background:
+                radial-gradient(circle at 80% 40%,
+                    var(--gradient-color-1) 0%,
+                    transparent 55%),
+                radial-gradient(circle at 20% 75%,
+                    var(--gradient-color-2) 0%,
+                    transparent 65%),
+                radial-gradient(circle at 60% 25%,
+                    var(--gradient-color-3) 0%,
+                    transparent 50%),
+                radial-gradient(circle at 25% 35%,
+                    var(--gradient-color-4) 0%,
+                    transparent 60%);
+            filter: blur(24px) brightness(1.15);
+            mix-blend-mode: screen;
+            transform-origin: center center;
+            animation: 
+                gradient-move 20s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+                gradient-scale 15s ease-in-out infinite alternate;
+        }
+
+        // Add noise texture overlay
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center center,
+                    transparent 0,
+                    rgba(0, 0, 0, 0.15) 100%);
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        padding: 2rem;
+        max-width: 42rem;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+
+            @media (min-width: 768px) {
+                font-size: 3.75rem;
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+
+            @media (min-width: 768px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+}
+
+// Color theme variations
+.theme-sunset {
+    --gradient-color-1: #ff6b6b;
+    --gradient-color-2: #ffd93d;
+    --gradient-color-3: #6c5ce7;
+    --gradient-color-4: #ff8c42;
+}
+
+.theme-ocean {
+    --gradient-color-1: #00b8d4;
+    --gradient-color-2: #0091ea;
+    --gradient-color-3: #64ffda;
+    --gradient-color-4: #0077c2;
+}
+
+.theme-aurora {
+    --gradient-color-1: #a8e6cf;
+    --gradient-color-2: #dcedc1;
+    --gradient-color-3: #ffd3b6;
+    --gradient-color-4: #ffaaa5;
+}
+
+@keyframes gradient-move {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-4%, 6%) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(4%, -4%) rotate(-2deg);
+    }
+
+    75% {
+        transform: translate(-3%, -3%) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes gradient-scale {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
