@@ -8420,7 +8420,7 @@ __metadata:
     react-dom: ^19.2.1
     rehype-katex: 7
     remark-math: 6
-    sass: ^1.93.3
+    sass: ^1.95.1
     typescript: ~5.9.3
   languageName: unknown
   linkType: soft
@@ -13503,9 +13503,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.93.3":
-  version: 1.93.3
-  resolution: "sass@npm:1.93.3"
+"sass@npm:^1.95.1":
+  version: 1.95.1
+  resolution: "sass@npm:1.95.1"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
@@ -13516,7 +13516,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: f0e8b133db69f4c999f0ef898988e7b2ee1a5d73c33d8e1a341252c68dcbdbf8df7863b9dd199c2574e834d42f7d6d472ab48f905b404c799ae31ac511b85521
+  checksum: 80863e5da78a41c4f2bbb620d72feb6f0110c3aa264a259865a9e2aed196f58edd4c50f6f4624bb52ef0ae28731ec647f717f8980da742aa68d4507ce8b95d68
   languageName: node
   linkType: hard
 

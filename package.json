@@ -30,7 +30,7 @@
     "react-dom": "^19.2.1",
     "rehype-katex": "7",
     "remark-math": "6",
-    "sass": "^1.93.3"
+    "sass": "^1.95.1"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.9.2",
