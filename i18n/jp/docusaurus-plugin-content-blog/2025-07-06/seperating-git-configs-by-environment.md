@@ -39,7 +39,7 @@ git config --get user.email
 # ~/.gitconfig-work
 [user]
 name = kyungkeun.song
-email = kyungkeun.song@42dot.ai
+email = kyungkeun.song@company.com
 ```
 
 ```toml
@@ -61,7 +61,16 @@ path = ~/.gitconfig-work
 
 その後、定義されたパスのgitディレクトリにアクセスしてuser.nameまたはemailを確認すると、
 
-![](https://i.imgur.com/NBuF6bp.png)
+```bash
+# cd ~/projects/company
+$ git config --get user.email
+songkg7@gmail.com
+
+$ git init
+
+$ git config --get user.email
+kyungkeun.song@company.com
+```
 
 `.git`フォルダが作成される前は個人の設定が適用され、`.git`フォルダが作成された瞬間に`includeIf`が動作して業務用の設定が適用されることが確認できます。
 

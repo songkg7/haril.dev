@@ -39,7 +39,7 @@ Let's configure `user.name` and `user.email` to be set to the company account. F
 # ~/.gitconfig-work
 [user]
 name = kyungkeun.song
-email = kyungkeun.song@42dot.ai
+email = kyungkeun.song@company.com
 ```
 
 ```toml
@@ -61,7 +61,16 @@ Personally, I prefer not to have configuration files scattered in the HOME direc
 
 After accessing the git directory of the defined path and checking user.name or email,
 
-![](https://i.imgur.com/NBuF6bp.png)
+```bash
+# cd ~/projects/company
+$ git config --get user.email
+songkg7@gmail.com
+
+$ git init
+
+$ git config --get user.email
+kyungkeun.song@company.com
+```
 
 you can see that the personal settings are applied before the `.git` folder is created, and the moment the `.git` folder is created, `includeIf` is triggered, and the work settings are applied.
 

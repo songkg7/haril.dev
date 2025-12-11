@@ -39,7 +39,7 @@ git config --get user.email
 # ~/.gitconfig-work
 [user]
 name = kyungkeun.song
-email = kyungkeun.song@42dot.ai
+email = kyungkeun.song@company.com
 ```
 
 ```toml
@@ -61,7 +61,16 @@ path = ~/.gitconfig-work
 
 이후 정의된 경로의 git directory 에 접근 한 뒤 user.name or email 을 확인해보면,
 
-![](https://i.imgur.com/NBuF6bp.png)
+```bash
+# cd ~/projects/company
+$ git config --get user.email
+songkg7@gmail.com
+
+$ git init
+
+$ git config --get user.email
+kyungkeun.song@company.com
+```
 
 `.git` 폴더가 생기기 전에는 개인 설정이 적용되다가, `.git` 폴더가 생기는 순간 `includeIf` 가 동작하여 업무 설정이 적용된 것을 확인할 수 있다.
 
