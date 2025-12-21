@@ -26,6 +26,7 @@ const config: Config = {
 		hooks: {
 			onBrokenMarkdownLinks: "warn",
 		},
+		mermaid: true,
 	},
 
 	// Even if you don't use internationalization, you can use this field to set
@@ -52,9 +53,7 @@ const config: Config = {
 	future: {
 		v4: true,
 	},
-	markdown: {
-		mermaid: true,
-	},
+
 	themes: ["@docusaurus/theme-mermaid"],
 
 	// katex
