@@ -27,7 +27,8 @@ export default function Home(): React.JSX.Element {
         <Layout
             // title={`${siteConfig.title}`}
             description={`${siteConfig.tagline}`}
-            wrapperClassName="homepage-layout">
+            wrapperClassName="homepage-layout"
+            noFooter>
             <main style={{ position: 'relative', flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <HomepageGalaxy />
             </main>
