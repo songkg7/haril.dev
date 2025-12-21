@@ -26,7 +26,8 @@ export default function Home(): React.JSX.Element {
     return (
         <Layout
             // title={`${siteConfig.title}`}
-            description={`${siteConfig.tagline}`}>
+            description={`${siteConfig.tagline}`}
+            wrapperClassName="homepage-layout">
             <HomepageGalaxy />
         </Layout>
     );
