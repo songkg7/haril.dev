@@ -1,12 +1,16 @@
 .homepage-galaxy {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     min-height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: #000; // Base background for Galaxy
+    z-index: 0;
 
     &__content {
         position: relative;
