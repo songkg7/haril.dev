@@ -10,7 +10,7 @@ const HomepageGalaxy = () => {
     return (
         <div className="homepage-galaxy">
             <Aurora
-                colorStops={['#a47864', '#c1a396', '#745344']}
+                colorStops={['#4A4A4A', '#F0EEE9', '#2A2A2A']}
                 amplitude={1.0}
                 blend={0.5}
                 speed={0.5}
