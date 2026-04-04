@@ -5163,7 +5163,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.49.0":
+"@typescript-eslint/parser@npm:^8.51.0":
   version: 8.58.0
   resolution: "@typescript-eslint/parser@npm:8.58.0"
   dependencies:
@@ -8708,16 +8708,16 @@ __metadata:
     "@mdx-js/react": "npm:^3.1.1"
     "@types/react": "npm:^19.2.7"
     "@types/react-dom": "npm:^19.2.3"
-    "@typescript-eslint/parser": "npm:^8.49.0"
+    "@typescript-eslint/parser": "npm:^8.51.0"
     clsx: "npm:^2.0.0"
     docusaurus-plugin-sass: "npm:^0.2.6"
     ogl: "npm:^1.0.11"
     prism-react-renderer: "npm:^2.4.1"
-    react: "npm:^19.2.1"
-    react-dom: "npm:^19.2.1"
+    react: "npm:^19.2.3"
+    react-dom: "npm:^19.2.3"
     rehype-katex: "npm:7"
     remark-math: "npm:6"
-    sass: "npm:^1.95.1"
+    sass: "npm:^1.97.1"
     typescript: "npm:~5.9.3"
   languageName: unknown
   linkType: soft
@@ -13013,7 +13013,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.1":
+"react-dom@npm:^19.2.3":
   version: 19.2.4
   resolution: "react-dom@npm:19.2.4"
   dependencies:
@@ -13134,7 +13134,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.1":
+"react@npm:^19.2.3":
   version: 19.2.4
   resolution: "react@npm:19.2.4"
   checksum: 10/18179fe217f67eb2d0bc61cd04e7ad3c282ea09a1dface7eacd71816f62609f4bbf566c447c704335284deb8397b00bca084e0cd60e6f437279a7498e2d0bfe0
@@ -13673,7 +13673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.95.1":
+"sass@npm:^1.97.1":
   version: 1.99.0
   resolution: "sass@npm:1.99.0"
   dependencies:

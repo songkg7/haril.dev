@@ -27,11 +27,11 @@
     "docusaurus-plugin-sass": "^0.2.6",
     "ogl": "^1.0.11",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "rehype-katex": "7",
     "remark-math": "6",
-    "sass": "^1.95.1"
+    "sass": "^1.97.1"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.9.2",
@@ -40,7 +40,7 @@
     "@docusaurus/types": "^3.9.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/parser": "^8.49.0",
+    "@typescript-eslint/parser": "^8.51.0",
     "typescript": "~5.9.3"
   },
   "browserslist": {
