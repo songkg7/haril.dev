@@ -8,6 +8,7 @@
 .docusaurus
 .playwright-mcp
 .cache-loader
+.claude
 
 # Misc
 .DS_Store
