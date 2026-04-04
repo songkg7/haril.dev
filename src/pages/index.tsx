@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import {HtmlClassNameProvider} from '@docusaurus/theme-common';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
@@ -24,14 +25,16 @@ function HomepageHeader() {
 export default function Home(): React.JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <Layout
-            // title={`${siteConfig.title}`}
-            description={`${siteConfig.tagline}`}
-            wrapperClassName="homepage-layout"
-            noFooter>
-            <main style={{ position: 'relative', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <HomepageAurora />
-            </main>
-        </Layout>
+        <HtmlClassNameProvider className="homepage-page">
+            <Layout
+                // title={`${siteConfig.title}`}
+                description={`${siteConfig.tagline}`}
+                wrapperClassName="homepage-layout"
+                noFooter>
+                <main style={{ position: 'relative', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                    <HomepageAurora />
+                </main>
+            </Layout>
+        </HtmlClassNameProvider>
     );
 }

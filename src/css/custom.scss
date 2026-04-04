@@ -57,7 +57,7 @@
 
 
 /* homepage specific transparency */
-[class*='plugin-pages'][class*='plugin-id-default'] {
+html.homepage-page {
   height: 100%;
   overflow: hidden;
 

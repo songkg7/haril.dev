@@ -38,6 +38,7 @@ const config: Config = {
 		localeConfigs: {
 			kr: {
 				label: "한국어",
+				htmlLang: "ko",
 			},
 			en: {
 				label: "English",
@@ -45,6 +46,7 @@ const config: Config = {
 			},
 			jp: {
 				label: "日本語",
+				htmlLang: "ja",
 			},
 		},
 	},
