@@ -1,4 +1,4 @@
-.homepage-galaxy {
+.homepage-aurora {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,8 +9,21 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #000; // Base background for Galaxy
+    background-color: #1c1917;
     z-index: 0;
+
+    &--light {
+        background-color: #E8E5DF;
+    }
+
+    &--dark {
+        background-color: #1c1917;
+    }
+
+    &--light &__content {
+        color: #2A2A2A;
+        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+    }
 
     &__content {
         position: relative;
@@ -20,7 +33,7 @@
         max-width: 42rem;
         color: white;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        pointer-events: none; // Allow mouse interaction to pass through to Galaxy
+        pointer-events: none;
 
         h1 {
             font-size: 2.25rem;

@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.scss';
-import HomepageGalaxy from '../components/HomepageGalaxy';
+import HomepageAurora from '../components/HomepageAurora';
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
@@ -30,7 +30,7 @@ export default function Home(): React.JSX.Element {
             wrapperClassName="homepage-layout"
             noFooter>
             <main style={{ position: 'relative', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <HomepageGalaxy />
+                <HomepageAurora />
             </main>
         </Layout>
     );
