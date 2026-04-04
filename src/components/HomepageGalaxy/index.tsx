@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Heading from '@theme/Heading';
-import Galaxy from '../Galaxy';
+import Aurora from '../Aurora';
 import './style.scss';
 
 const HomepageGalaxy = () => {
@@ -9,12 +9,11 @@ const HomepageGalaxy = () => {
 
     return (
         <div className="homepage-galaxy">
-            <Galaxy
-                density={1}
+            <Aurora
+                colorStops={['#a47864', '#c1a396', '#745344']}
+                amplitude={1.0}
+                blend={0.5}
                 speed={0.5}
-                rotationSpeed={0.05}
-                mouseRepulsion={true}
-                transparent={false} // Since it's a background for the whole hero
             />
             <div className="homepage-galaxy__content">
                 <Heading as="h1" className="hero__title">
